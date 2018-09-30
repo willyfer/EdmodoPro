@@ -1,2 +1,2 @@
 # EdmodoPro
-Sistema web para colegios
+Universidad Nacional Pedro Ruiz Gallo
