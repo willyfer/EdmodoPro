@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:33065
--- Tiempo de generación: 06-10-2018 a las 10:03:34
+-- Tiempo de generación: 06-10-2018 a las 12:44:42
 -- Versión del servidor: 10.1.26-MariaDB
 -- Versión de PHP: 7.1.8
 
@@ -98,6 +98,21 @@ CREATE TABLE `tb_docente_tarea` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `tb_publicacion`
+--
+
+CREATE TABLE `tb_publicacion` (
+  `tb_publicacion_id` int(4) NOT NULL,
+  `tb_publicacion_asunto` varchar(40) NOT NULL,
+  `tb_publicacion_desc` int(150) NOT NULL,
+  `tb_publicacion_tipo` char(1) NOT NULL,
+  `tb_alumno_id` int(4) DEFAULT NULL,
+  `tb_docente_id` int(4) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `tb_tarea`
 --
 
@@ -179,6 +194,12 @@ ALTER TABLE `tb_docente_tarea`
   ADD KEY `fk_docente_id` (`tb_docente_id`) USING BTREE;
 
 --
+-- Indices de la tabla `tb_publicacion`
+--
+ALTER TABLE `tb_publicacion`
+  ADD PRIMARY KEY (`tb_publicacion_id`);
+
+--
 -- Indices de la tabla `tb_tarea`
 --
 ALTER TABLE `tb_tarea`
@@ -206,6 +227,11 @@ ALTER TABLE `tb_colegio`
 --
 ALTER TABLE `tb_curso`
   MODIFY `tb_curso_id` int(4) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT de la tabla `tb_publicacion`
+--
+ALTER TABLE `tb_publicacion`
+  MODIFY `tb_publicacion_id` int(4) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `usuario`
 --
