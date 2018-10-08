@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:33065
--- Tiempo de generación: 06-10-2018 a las 12:44:42
+-- Tiempo de generación: 08-10-2018 a las 10:23:45
 -- Versión del servidor: 10.1.26-MariaDB
 -- Versión de PHP: 7.1.8
 
@@ -98,6 +98,21 @@ CREATE TABLE `tb_docente_tarea` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `tb_notificacion`
+--
+
+CREATE TABLE `tb_notificacion` (
+  `tb_notificacion_id` int(4) NOT NULL,
+  `tb_usuario1_id` int(4) NOT NULL,
+  `tb_usuario2_id` int(4) NOT NULL,
+  `tb_notificacion_tipo` varchar(1) NOT NULL,
+  `fecha` datetime NOT NULL,
+  `tb_publicion_id` int(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `tb_publicacion`
 --
 
@@ -106,8 +121,8 @@ CREATE TABLE `tb_publicacion` (
   `tb_publicacion_asunto` varchar(40) NOT NULL,
   `tb_publicacion_desc` int(150) NOT NULL,
   `tb_publicacion_tipo` char(1) NOT NULL,
-  `tb_alumno_id` int(4) DEFAULT NULL,
-  `tb_docente_id` int(4) DEFAULT NULL
+  `tb_usuario_receptor_id` int(4) NOT NULL,
+  `tb_usuario_emisor_id` int(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -143,7 +158,7 @@ CREATE TABLE `tb_tarea_curso` (
 --
 
 CREATE TABLE `usuario` (
-  `tb_usuario_id` int(3) NOT NULL,
+  `tb_usuario_id` int(4) NOT NULL,
   `tb_usuario_nom` varchar(20) NOT NULL,
   `tb_usuario_ape` varchar(20) NOT NULL,
   `tb_usuario_email` varchar(30) NOT NULL,
@@ -194,6 +209,12 @@ ALTER TABLE `tb_docente_tarea`
   ADD KEY `fk_docente_id` (`tb_docente_id`) USING BTREE;
 
 --
+-- Indices de la tabla `tb_notificacion`
+--
+ALTER TABLE `tb_notificacion`
+  ADD KEY `fk_publicacion_id` (`tb_publicion_id`);
+
+--
 -- Indices de la tabla `tb_publicacion`
 --
 ALTER TABLE `tb_publicacion`
@@ -236,7 +257,7 @@ ALTER TABLE `tb_publicacion`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `tb_usuario_id` int(3) NOT NULL AUTO_INCREMENT;
+  MODIFY `tb_usuario_id` int(4) NOT NULL AUTO_INCREMENT;
 --
 -- Restricciones para tablas volcadas
 --
@@ -258,6 +279,12 @@ ALTER TABLE `tb_alumo`
 --
 ALTER TABLE `tb_docente_tarea`
   ADD CONSTRAINT `fk_docente` FOREIGN KEY (`tb_docente_id`) REFERENCES `tb_docente` (`tb_docente_id`);
+
+--
+-- Filtros para la tabla `tb_notificacion`
+--
+ALTER TABLE `tb_notificacion`
+  ADD CONSTRAINT `fk_publicacion_id` FOREIGN KEY (`tb_publicion_id`) REFERENCES `tb_publicacion` (`tb_publicacion_id`);
 
 --
 -- Filtros para la tabla `tb_tarea`
