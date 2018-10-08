@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:33065
--- Tiempo de generación: 08-10-2018 a las 10:23:45
+-- Tiempo de generación: 08-10-2018 a las 20:54:06
 -- Versión del servidor: 10.1.26-MariaDB
 -- Versión de PHP: 7.1.8
 
@@ -69,7 +69,8 @@ CREATE TABLE `tb_curso` (
   `tb_curso_id` int(4) NOT NULL,
   `tb_curso_nombre` varchar(20) NOT NULL,
   `tb_curso_colegio_id` int(11) NOT NULL,
-  `tb_curso_grupo` char(1) NOT NULL
+  `tb_curso_grupo` char(1) NOT NULL,
+  `tb_docente_id` int(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -81,18 +82,7 @@ CREATE TABLE `tb_curso` (
 CREATE TABLE `tb_docente` (
   `tb_docente_id` int(4) NOT NULL,
   `tb_docente_colegio_id` int(11) NOT NULL,
-  `tb_docente_nota_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `tb_docente_tarea`
---
-
-CREATE TABLE `tb_docente_tarea` (
-  `tb_tarea_id` int(4) NOT NULL,
-  `tb_docente_id` int(4) NOT NULL
+  `tb_docente_desc` varchar(150) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -136,8 +126,9 @@ CREATE TABLE `tb_tarea` (
   `tb_tarea_nombre` varchar(20) NOT NULL,
   `tb_tarea_desc` varchar(40) NOT NULL,
   `tb_tarea_id_curso` int(4) NOT NULL,
-  `tb_tarea_fec_ini` date DEFAULT NULL,
-  `tb_tarea_fecha_fin` date NOT NULL
+  `tb_tarea_fec_ini` date NOT NULL,
+  `tb_tarea_fecha_fin` date DEFAULT NULL,
+  `tb_tarea_nota` int(2) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -193,7 +184,8 @@ ALTER TABLE `tb_colegio`
 -- Indices de la tabla `tb_curso`
 --
 ALTER TABLE `tb_curso`
-  ADD PRIMARY KEY (`tb_curso_id`);
+  ADD PRIMARY KEY (`tb_curso_id`),
+  ADD KEY `fk_docente_id` (`tb_docente_id`);
 
 --
 -- Indices de la tabla `tb_docente`
@@ -202,17 +194,12 @@ ALTER TABLE `tb_docente`
   ADD PRIMARY KEY (`tb_docente_id`);
 
 --
--- Indices de la tabla `tb_docente_tarea`
---
-ALTER TABLE `tb_docente_tarea`
-  ADD KEY `fk_tarea_id` (`tb_tarea_id`),
-  ADD KEY `fk_docente_id` (`tb_docente_id`) USING BTREE;
-
---
 -- Indices de la tabla `tb_notificacion`
 --
 ALTER TABLE `tb_notificacion`
-  ADD KEY `fk_publicacion_id` (`tb_publicion_id`);
+  ADD KEY `fk_publicacion_id` (`tb_publicion_id`),
+  ADD KEY `fk_emisor_id` (`tb_usuario1_id`),
+  ADD KEY `fk_receptor_id` (`tb_usuario2_id`);
 
 --
 -- Indices de la tabla `tb_publicacion`
@@ -275,16 +262,16 @@ ALTER TABLE `tb_alumo`
   ADD CONSTRAINT `fk_usuario_id` FOREIGN KEY (`tb_usuario_id`) REFERENCES `usuario` (`tb_usuario_id`);
 
 --
--- Filtros para la tabla `tb_docente_tarea`
+-- Filtros para la tabla `tb_curso`
 --
-ALTER TABLE `tb_docente_tarea`
-  ADD CONSTRAINT `fk_docente` FOREIGN KEY (`tb_docente_id`) REFERENCES `tb_docente` (`tb_docente_id`);
+ALTER TABLE `tb_curso`
+  ADD CONSTRAINT `fk_docente_id` FOREIGN KEY (`tb_docente_id`) REFERENCES `tb_docente` (`tb_docente_id`);
 
 --
 -- Filtros para la tabla `tb_notificacion`
 --
 ALTER TABLE `tb_notificacion`
-  ADD CONSTRAINT `fk_publicacion_id` FOREIGN KEY (`tb_publicion_id`) REFERENCES `tb_publicacion` (`tb_publicacion_id`);
+  ADD CONSTRAINT `fk_receptor_id` FOREIGN KEY (`tb_usuario2_id`) REFERENCES `usuario` (`tb_usuario_id`);
 
 --
 -- Filtros para la tabla `tb_tarea`
