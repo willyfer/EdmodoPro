@@ -1,0 +1,70 @@
+.visible {
+    visibility: visible;
+}
+#btn_sesion {}
+#input_busqueda {
+    color: white;
+}
+#fila_nav {
+    background-color: yellow;
+}
+#foto_perfil {
+    margin: 10px;
+}
+#perfil {
+    background-color: blue;
+    border-radius: 8px;
+    border-bottom-style: groove;
+}
+#usuario {
+    margin-right: 10px;
+}
+#nav_principal {
+    border-radius: 10px;
+    border-style: ridge;
+    background-color: #37474f;
+}
+.img_small {
+    height: 30;
+    width: 30;
+}
+.img_center {
+    display: block;
+    margin: auto;
+}
+.img_medium {
+    height: 50;
+    width: 50;
+}
+.img_big {
+    height: 70;
+    width: 70;
+}
+#publicacion {
+    background-color: white;
+}
+.ancho_auto {
+    width: 95%;
+}
+.largo_auto {
+    height: 100%;
+}
+#social {
+    margin: 5px;
+    border-radius: 5px;
+    border-color: black;
+    border-style: ridge;
+    border-width: 1px;
+}
+.img_post {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    height: 500;
+    width: 450;
+}
+#input_comment {
+    padding: 2px;
+    border-radius: 5px;
+    margin: 3px;
+}
