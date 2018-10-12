@@ -25,7 +25,7 @@
         </script>
     </head>
     <body>
-        <nav class="container-fluid">
+        <nav class="container">
             <div class="row " id="fila_nav">
                 <div class="col-md-3" id="logo">
                     <p class="navbar-brand">
@@ -127,65 +127,92 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius itaque id ipsam consequuntur, earum illo officiis, unde rerum, a aspernatur sit saepe nesciunt facilis provident quisquam distinctio eaque odio repudiandae.
                     </p>
                 </div>
-                <div class="col-md-7 btn-warning" id="contenido">
-                    <div class="" id="publicacion">
-                        <div id="img_usuario">
-                            <img "="" alt="" class="img_medium img-raised rounded-circle img-fluid" src="assets/img/tablero-de-ajedrez.png">
-                                <label for="">
-                                    nombre de la persona que publica
-                                </label>
-                                <i class="material-icons">
-                                    arrow_right
-                                </i>
-                                <label for="">
-                                    a quien publica
-                                </label>
-                            </img>
-                        </div>
-                        <div id="publicacion">
-                            <div id="txt_post">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima itaque nulla ipsa.
-                                </p>
-                            </div>
-                            <div id="post">
-                                <img alt="" class="img_post img_center" src="assets/img/apple-icon.png">
-                                </img>
-                            </div>
-                            <div id="social">
-                                <div class="row container">
-                                    <div class="col-lg-6" id="icon_like">
-                                        <button class="btn btn-white data-toggle=" data-placement="left" title="Deja un mensaje" tooltip"="" type="button">
-                                            <i class="material-icons">
-                                                thumb_up_alt
-                                            </i>
-                                            Like
-                                        </button>
-                                    </div>
-                                    <div class="col-lg-6" id="icon_comment">
-                                        <button "="" class=" btn btn-white data-toggle=" data-placement="left" title="Tooltip on left" tooltip"="">
-                                            <i class="material-icons">
-                                                comment
-                                            </i>
-                                            Comentar
-                                        </button>
-                                    </div>
+                <div class="col-md-7" id="contenido">
+                    <div class="" id="publicar">
+                        <div>
+                            <div class="row">
+                                <div class="col-md-2" id="img_user_publicar">
+                                    <img alt="foto de perfil" class="img-raised rounded-circle img-fluid" id="foto_perfil" src="assets/img/tablero-de-ajedrez.png">
+                                    </img>
+                                </div>
+                                <div class="col-md-10 container" id="name_user_publicar">
+                                    <h3>
+                                        nombre del ususario
+                                    </h3>
                                 </div>
                             </div>
-                            <div id="comentarios">
-                                <div id="img_usuario">
+                        </div>
+                        <div id="div_txtarea_post">
+                            <textarea id="txt_area_post" name="" placeholder="Escribe algo ...">
+                            </textarea>
+                            <div class="row container">
+                                <button class="btn-fab btn-round col-md-5 btn btn-success" id="btn_send">
+                                    <i class="material-icons">
+                                        send
+                                    </i>
+                                </button>
+                                <div class="col-md-6">
+                                    <button class="ancho_auto col-md-5 btn btn-primary">
+                                    </button>
+                                </div>
+                                <div class="col-md-6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="publicacion">
+                        <div>
+                            <img alt="foto de perfil" class=" img_big img-raised rounded-circle img-fluid" id="foto_perfil" src="assets/img/tablero-de-ajedrez.png">
+                            </img>
+                            <label for="">
+                                nombre del ususario
+                            </label>
+                            <label for="">
+                                tipo de usuario
+                            </label>
+                        </div>
+                        <div class="container" id="txt_post">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima itaque nulla ipsa.
+                            </p>
+                        </div>
+                        <div id="post">
+                            <img alt="" class="img_post img_center" src="assets/img/apple-icon.png">
+                            </img>
+                        </div>
+                        <div id="social">
+                            <div class="row container">
+                                <div class="col-lg-6" id="icon_like">
+                                    <button class="btn btn-white data-toggle=" data-placement="left" title="Deja un mensaje" tooltip"="" type="button">
+                                        <i class="material-icons">
+                                            thumb_up_alt
+                                        </i>
+                                        Like
+                                    </button>
+                                </div>
+                                <div class="col-lg-6" id="icon_comment">
+                                    <button "="" class=" btn btn-white data-toggle=" data-placement="left" title="Tooltip on left" tooltip"="">
+                                        <i class="material-icons">
+                                            comment
+                                        </i>
+                                        Comentar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="comentarios">
+                            <div id="img_usuario">
+                                <div>
                                     <div>
-                                        <div>
-                                            <img "="" alt="" class="img-raised rounded-circle img-fluid img_small" src="assets/img/tablero-de-ajedrez.png">
-                                                <label for="">
-                                                    nombre de la persona que publica
-                                                </label>
-                                            </img>
-                                        </div>
-                                        <div style="padding: 0px">
-                                            <input class="ancho_auto" id="input_comment" placeholder="Comentar ..." type="text">
-                                            </input>
-                                        </div>
+                                        <img "="" alt="" class="img-raised rounded-circle img-fluid img_small" src="assets/img/tablero-de-ajedrez.png">
+                                            <label for="">
+                                                nombre de la persona que publica
+                                            </label>
+                                        </img>
+                                    </div>
+                                    <div style="padding: 0px">
+                                        <input class="ancho_auto" id="input_comment" placeholder="Comentar ..." type="text">
+                                        </input>
                                     </div>
                                 </div>
                             </div>
@@ -195,26 +222,26 @@
             </div>
         </div>
     </body>
+    <footer>
+    </footer>
+    <script src="./assets/js/core/jquery.min.js" type="text/javascript">
+    </script>
+    <script src="./assets/js/core/popper.min.js" type="text/javascript">
+    </script>
+    <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript">
+    </script>
+    <script src="./assets/js/plugins/moment.min.js">
+    </script>
+    <!--  Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+    <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript">
+    </script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript">
+    </script>
+    <!--  Plugin for Sharrre btn -->
+    <script src="./assets/js/plugins/jquery.sharrre.js" type="text/javascript">
+    </script>
+    <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+    <script src="./assets/js/material-kit.js?v=2.0.4" type="text/javascript">
+    </script>
 </html>
-<footer>
-</footer>
-<script src="./assets/js/core/jquery.min.js" type="text/javascript">
-</script>
-<script src="./assets/js/core/popper.min.js" type="text/javascript">
-</script>
-<script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript">
-</script>
-<script src="./assets/js/plugins/moment.min.js">
-</script>
-<!--  Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-<script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript">
-</script>
-<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-<script src="./assets/js/plugins/nouislider.min.js" type="text/javascript">
-</script>
-<!--  Plugin for Sharrre btn -->
-<script src="./assets/js/plugins/jquery.sharrre.js" type="text/javascript">
-</script>
-<!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-<script src="./assets/js/material-kit.js?v=2.0.4" type="text/javascript">
-</script>
