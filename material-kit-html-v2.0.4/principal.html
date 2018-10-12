@@ -33,13 +33,17 @@
                     </p>
                 </div>
                 <div class="col-md-4 row" id="busqueda">
-                    <button class="btn btn-fab btn-round" type="submit">
-                        <i class="material-icons">
-                            search
-                        </i>
-                    </button>
-                    <input class="form-control" id="input_busqueda" placeholder="Buscar..." type="text">
-                    </input>
+                    <div class="col-md-8">
+                        <input class="form-control" id="input_busqueda" placeholder="Buscar..." type="text">
+                        </input>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-fab btn-round" style="margin-right: 3px" type="submit">
+                            <i class="material-icons">
+                                search
+                            </i>
+                        </button>
+                    </div>
                 </div>
                 <div class="col-md-5 " id="opciones">
                     <div class="nav-tabs-wrapper " id="menu">
@@ -128,7 +132,7 @@
                     </p>
                 </div>
                 <div class="col-md-7" id="contenido">
-                    <div class="" id="publicar">
+                    <div id="publicar">
                         <div>
                             <div class="row">
                                 <div class="col-md-2" id="img_user_publicar">
@@ -152,7 +156,8 @@
                                     </i>
                                 </button>
                                 <div class="col-md-6">
-                                    <button class="ancho_auto col-md-5 btn btn-primary">
+                                    <button class="btn btn-default" data-placement="left" data-toggle="tooltip" title="Tooltip on left" type="button">
+                                        Tooltip on left
                                     </button>
                                 </div>
                                 <div class="col-md-6">
@@ -162,7 +167,7 @@
                     </div>
                     <div id="publicacion">
                         <div>
-                            <img alt="foto de perfil" class=" img_big img-raised rounded-circle img-fluid" id="foto_perfil" src="assets/img/tablero-de-ajedrez.png">
+                            <img alt="foto de perfil" class="img-responsive img_big img-raised rounded-circle img-fluid" id="foto_perfil" src="assets/img/tablero-de-ajedrez.png">
                             </img>
                             <label for="">
                                 nombre del ususario
