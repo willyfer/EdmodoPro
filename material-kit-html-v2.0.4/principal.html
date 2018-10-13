@@ -24,11 +24,13 @@
         <script src="assets/js/jquery-3.3.1.js">
         </script>
     </head>
-    <body>
-        <nav class="container">
+    <body style="background-color: #404040">
+        <nav class="container-fluid">
             <div class="row " id="fila_nav">
                 <div class="col-md-3" id="logo">
-                    <p class="navbar-brand">
+                    <img alt="" class="img-responsive " id="img_logo" src="assets/img/logo.png">
+                    </img>
+                    <p class="navbar-brand" id="titulo_edmodo">
                         EDMODO PRO
                     </p>
                 </div>
@@ -101,12 +103,12 @@
                         </div>
                         <div class="container">
                             <label for="">
-                                nombre del ususario
+                                Willy fernandez Gastelo
                             </label>
                         </div>
                         <div class="container">
                             <label for="">
-                                tipo de usuario
+                                Alumno
                             </label>
                         </div>
                     </div>
@@ -132,17 +134,17 @@
                     </p>
                 </div>
                 <div class="col-md-7" id="contenido">
-                    <div id="publicar">
-                        <div>
-                            <div class="row">
+                    <div class="container" id="publicar">
+                        <div class="container">
+                            <div class="row" id="barra_user">
                                 <div class="col-md-2" id="img_user_publicar">
                                     <img alt="foto de perfil" class="img-raised rounded-circle img-fluid" id="foto_perfil" src="assets/img/tablero-de-ajedrez.png">
                                     </img>
                                 </div>
                                 <div class="col-md-10 container" id="name_user_publicar">
-                                    <h3>
-                                        nombre del ususario
-                                    </h3>
+                                    <label id="name_user_post">
+                                        Willy fernandez Gastelo
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -150,30 +152,42 @@
                             <textarea id="txt_area_post" name="" placeholder="Escribe algo ...">
                             </textarea>
                             <div class="row container">
-                                <button class="btn-fab btn-round col-md-5 btn btn-success" id="btn_send">
-                                    <i class="material-icons">
-                                        send
-                                    </i>
-                                </button>
-                                <div class="col-md-6">
-                                    <button class="btn btn-default" data-placement="left" data-toggle="tooltip" title="Tooltip on left" type="button">
-                                        Tooltip on left
+                                <div class="col-md-4">
+                                    <button class="btn dropdown dropdown-toggle " data-placement="left" data-toggle="tooltip" style="background-color: transparent;" title="Modo de publicación" type="button">
+                                        público
                                     </button>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4" style="align-content: flex-end;">
+                                    <button class="btn btn-fab " data-placement="bottom" data-toggle="tooltip" id="post_btn_insert" title="Añadir archivos" type="button">
+                                        <i class="material-icons">
+                                            attachment
+                                        </i>
+                                    </button>
+                                    <button class="btn btn-fab" data-placement="bottom" data-toggle="tooltip" id="post_btn_insert" title="Añadir fotos">
+                                        <i class="material-icons">
+                                            add_photo_alternate
+                                        </i>
+                                    </button>
+                                    <button class="btn-fab btn " data-placement="bottom" data-toggle="tooltip" id="post_btn_insert">
+                                        <i class="material-icons">
+                                            send
+                                        </i>
+                                    </button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button class="ancho_auto btn btn-primary row">
+                                        publicar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="publicacion">
+                    <div class="container" id="publicacion">
                         <div>
                             <img alt="foto de perfil" class="img-responsive img_big img-raised rounded-circle img-fluid" id="foto_perfil" src="assets/img/tablero-de-ajedrez.png">
                             </img>
-                            <label for="">
-                                nombre del ususario
-                            </label>
-                            <label for="">
-                                tipo de usuario
+                            <label for="" id="name_user_posts">
+                                Willy fernandez Gastelo
                             </label>
                         </div>
                         <div class="container" id="txt_post">
@@ -225,28 +239,28 @@
                     </div>
                 </div>
             </div>
+            <footer class="form-control panel-footer btn-primary">
+            </footer>
+            <script src="./assets/js/core/jquery.min.js" type="text/javascript">
+            </script>
+            <script src="./assets/js/core/popper.min.js" type="text/javascript">
+            </script>
+            <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript">
+            </script>
+            <script src="./assets/js/plugins/moment.min.js">
+            </script>
+            <!--  Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+            <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript">
+            </script>
+            <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+            <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript">
+            </script>
+            <!--  Plugin for Sharrre btn -->
+            <script src="./assets/js/plugins/jquery.sharrre.js" type="text/javascript">
+            </script>
+            <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+            <script src="./assets/js/material-kit.js?v=2.0.4" type="text/javascript">
+            </script>
         </div>
     </body>
-    <footer>
-    </footer>
-    <script src="./assets/js/core/jquery.min.js" type="text/javascript">
-    </script>
-    <script src="./assets/js/core/popper.min.js" type="text/javascript">
-    </script>
-    <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript">
-    </script>
-    <script src="./assets/js/plugins/moment.min.js">
-    </script>
-    <!--  Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-    <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript">
-    </script>
-    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-    <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript">
-    </script>
-    <!--  Plugin for Sharrre btn -->
-    <script src="./assets/js/plugins/jquery.sharrre.js" type="text/javascript">
-    </script>
-    <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-    <script src="./assets/js/material-kit.js?v=2.0.4" type="text/javascript">
-    </script>
 </html>

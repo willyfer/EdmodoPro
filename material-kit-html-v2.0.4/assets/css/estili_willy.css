@@ -1,6 +1,11 @@
 .visible {
     visibility: visible;
 }
+#titulo_edmodo {
+    color: white;
+    font-style: bold;
+    font-size: 20px;
+}
 #btn_sesion {}
 #input_busqueda {
     color: white;
@@ -43,6 +48,9 @@
 }
 #publicacion {
     background-color: white;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
 }
 .ancho_auto {
     width: 95%;
@@ -67,23 +75,27 @@
 #input_comment {
     font-family: monospace;
     font-style: normal;
-    font-size: 14px;
+    font-size: 12px;
     padding: 2px;
     border-radius: 5px;
     margin: 3px;
 }
 #publicar {
-    background-color: #842682;
+    background-color: white;
     border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #404040;
 }
 #main {
     margin-top: 9px;
 }
 #div_txtarea_post {
     height: 140px;
-    padding: 3px;
-    margin: 0px;
-    border-radius: 0px 8px 8px 0px;
+    padding: 0px;
+    margin: 2px;
+    background-color: #202931;
+    border-radius: 0px 0px 8px 8px;
 }
 #txt_area_post {
     width: 100%;
@@ -95,12 +107,34 @@
 #name_user_publicar {
     margin: 8px, 8px, 8px, 8px;
     padding: 8px 8px 8px 8px;
-    align-content: center;
-    font-size: 12px;
     color: white;
 }
 #btn_send {
     position: absolute;
     font-size: 36px;
-    box-shadow: 0 3px 6px
+}
+#name_user_post {
+    color: #202931;
+    font-size: 17px;
+    font-style: bold;
+    text-align: center;
+    padding: 10px;
+}
+#name_user_posts {
+    color: #202931;
+    font-size: 14px;
+    font-style: bold;
+}
+#img_logo {
+    width: 70px;
+    height: 50px;
+}
+#post_btn_insert {
+    background-color: #202931;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+}
+#barra_user {
+    background-color: white;
 }
