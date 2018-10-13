@@ -13,7 +13,7 @@
 #fila_nav {
     background-color: #2b374d;
     border-radius: 5px;
-    padding: 2px;
+    padding: 9px;
     align-content: center;
 }
 #foto_perfil {
@@ -141,4 +141,12 @@
 }
 .body_fondo {
     background-image: url("fondo.png");
+}
+.btn_nav {
+    color: white;
+    font-size: 16px;
+    font-style: bold;
+}
+#navegador {
+    background-color: red;
 }
