@@ -11,7 +11,7 @@
     color: white;
 }
 #fila_nav {
-    background-color: #404040;
+    background-color: #2b374d;
     border-radius: 5px;
     padding: 8px;
 }
@@ -86,6 +86,7 @@
     border-style: solid;
     border-width: 1px;
     border-color: #404040;
+    border-color: #2b374d;
 }
 #main {
     margin-top: 9px;
@@ -94,7 +95,7 @@
     height: 140px;
     padding: 0px;
     margin: 2px;
-    background-color: #404040;
+    background-color: #2b374d;
     border-radius: 0px 0px 8px 8px;
 }
 #txt_area_post {
@@ -114,14 +115,14 @@
     font-size: 36px;
 }
 #name_user_post {
-    color: #404040;
+    color: #2b374d;
     font-size: 17px;
     font-style: bold;
     text-align: center;
     padding: 10px;
 }
 #name_user_posts {
-    color: #404040;
+    color: #2b374d;
     font-size: 14px;
     font-style: bold;
 }
@@ -130,7 +131,7 @@
     height: 50px;
 }
 #post_btn_insert {
-    background-color: #404040;
+    background-color: #2b374d;
     border-color: white;
     border-width: 1px;
     border-style: solid;
