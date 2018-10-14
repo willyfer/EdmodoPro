@@ -1,10 +1,10 @@
 <!DOCTYPE doctype html>
+<meta charset="utf-8"/>
 <html lang="en">
     <head>
         <title>
             Edmodo Pro
         </title>
-        <meta charset="utf-8"/>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
             </script>
@@ -17,94 +17,112 @@
                         <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport"/>
                         <!--     Fonts and icons     -->
                         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" rel="stylesheet" type="text/css"/>
-                        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-                            <!-- CSS Files -->
-                            <link href="./assets/css/material-kit.css?v=2.0.4" rel="stylesheet"/>
-                            <!-- CSS Just for demo purpose, don't include it in your project -->
-                            <link href="./assets/demo/demo.css" rel="stylesheet"/>
-                        </link>
+                        <!-- CSS Files -->
+                        <!--<link href="./assets/css/material-kit.css?v=2.0.4" rel="stylesheet"/-->
+                        <!-- CSS Just for demo purpose, don't include it in your project -->
+                        <link href="./assets/demo/demo.css" rel="stylesheet"/>
                     </link>
                 </link>
             </link>
-            <script src="assets/js/jquery-3.3.1.js">
-            </script>
         </link>
+        <script src="assets/js/jquery-3.3.1.js">
+        </script>
     </head>
-    <body background="assets/img/fondo2.jpg">
-        <nav class="navbar navbar-inverse">
-            <div class="row ancho_auto " id="fila_nav">
-                <div class="col-md-3 " id="logo">
-                    <img alt="" class="img-responsive " id="img_logo" src="assets/img/logo.png">
-                    </img>
-                    <p class="navbar-brand" id="titulo_edmodo">
-                        EDMODO PRO
-                    </p>
+    <body>
+        <nav class="navbar navbar-inverse ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button">
+                        <span class="icon-bar">
+                        </span>
+                        <span class="icon-bar">
+                        </span>
+                        <span class="icon-bar">
+                        </span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        Edmodo Pro
+                    </a>
                 </div>
-                <div class="col-md-4 row" id="busqueda">
-                    <div class="col-md-8">
-                        <form action="" class="form-control navbar-form">
-                            <input placeholder="busqueda" type="   ">
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <form action="#" class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Buscar..." type="text">
                             </input>
-                        </form>
-                        <input class="form-control" id="input_busqueda" placeholder="Buscar..." type="text">
-                        </input>
-                    </div>
-                    <div class="col-md-3">
-                        <button class="btn btn-fab btn-round" style="margin-right: 3px" type="submit">
-                            <i class="material-icons">
-                                search
-                            </i>
+                        </div>
+                        <button class="glyphicon glyphicon-search btn btn-default" type="submit">
                         </button>
-                    </div>
-                </div>
-                <nav class="nav navbar-inverse">
+                    </form>
                     <ul class="nav navbar-nav">
                         <li class="active">
                             <a href="#">
-                                Home
+                                Inicio
                             </a>
                         </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                Page 1
-                                <span class="caret">
+                        <li>
+                            <a class="dropdown dropdown-toggle glyphicon glyphicon-comment" data-toggle="dropdown" href="#">
+                                <span class="badge span2">
+                                    23
                                 </span>
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu ul2">
                                 <li>
-                                    <a href="#">
-                                        Page 1-1
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Page 1-2
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Page 1-3
+                                    <div class="" id="head_sms">
+                                        <div class="container-fluid">
+                                            mensajes
+                                            <a class="navbar-right" href="#">
+                                                ver todo
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="#" id="name_sms">
+                                        <div>
+                                            <img alt="" class="img_small img-rounded img-circle" src="assets/img/puican.jpg">
+                                                hambler escobedo
+                                                <span class="badge span2 ">
+                                                    34
+                                                </span>
+                                                <p id="sms">
+                                                    hola
+                                                </p>
+                                            </img>
+                                        </div>
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li>
                             <a href="#">
-                                Page 2
+                                gdfgdfg
+                            </a>
+                        </li>
+                        <li>
+                            <a class="glyphicon glyphicon-lock" href="#">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-user">
+                                </span>
+                                Sign Up
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                Page 3
+                                <span class="glyphicon glyphicon-log-in">
+                                </span>
+                                Login
                             </a>
                         </li>
                     </ul>
-                </nav>
+                </div>
             </div>
         </nav>
-        <div class="container" id="main">
-            <div class="row ">
-                <div class="col-md-4" id="usuario">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
                     <div class="row" id="perfil">
                         <div>
                             <img alt="foto de perfil" class=" img_big img-raised rounded-circle img-fluid" id="foto_perfil" src="assets/img/tablero-de-ajedrez.png">
@@ -121,77 +139,49 @@
                             </label>
                         </div>
                     </div>
-                    <div id="cursos">
-                        <button class="btn btn-group-lg">
-                        </button>
-                        <button class="btn btn-group-lg">
-                        </button>
-                        <button class="btn btn-group-lg">
-                        </button>
-                        <button class="btn btn-group-lg">
-                        </button>
-                    </div>
-                    <div id="tarea">
-                    </div>
-                    <div>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius itaque id ipsam consequuntur, earum illo officiis, unde rerum, a aspernatur sit saepe nesciunt facilis provident quisquam distinctio eaque odio repudiandae.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius itaque id ipsam consequuntur, earum illo officiis, unde rerum, a aspernatur sit saepe nesciunt facilis provident quisquam distinctio eaque odio repudiandae.
-                    </p>
                 </div>
-                <div class="col-md-7" id="contenido">
-                    <div class="container" id="publicar">
-                        <div class="container">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum aperiam officiis consequuntur ipsum eum nulla rem, odio accusamus quae enim aliquid corporis unde soluta quia quos a beatae, ratione possimus!
+                <div class="col-md-7">
+                    <div>
+                        <div class="container-fluid">
                             <div class="row" id="barra_user">
                                 <div class="col-md-2" id="img_user_publicar">
-                                    <img alt="foto de perfil" class="img-raised rounded-circle img-fluid" id="foto_perfil" src="assets/img/tablero-de-ajedrez.png">
+                                    <img alt="foto de perfil" class="img-rounded img-circle img-fluid" id="foto_perfil" src="assets/img/tablero-de-ajedrez.png">
                                     </img>
                                 </div>
-                                <div class="col-md-10 container" id="name_user_publicar">
+                                <div class="col-md-7 container-fluid" id="name_user_publicar">
                                     <label id="name_user_post">
                                         Willy fernandez Gastelo
                                     </label>
                                 </div>
                             </div>
-                        </div>
-                        <div id="div_txtarea_post">
-                            <textarea id="txt_area_post" name="" placeholder="Escribe algo ...">
-                            </textarea>
-                            <div class="row container">
-                                <div class="col-md-4">
-                                    <button class="btn dropdown dropdown-toggle " data-placement="left" data-toggle="tooltip" style="background-color: transparent;" title="Modo de publicación" type="button">
-                                        público
-                                    </button>
-                                </div>
-                                <div class="col-md-4" style="align-content: flex-end;">
-                                    <button class="btn btn-fab " data-placement="bottom" data-toggle="tooltip" id="post_btn_insert" title="Añadir archivos" type="button">
-                                        <i class="material-icons">
-                                            attachment
-                                        </i>
-                                    </button>
-                                    <button class="btn btn-fab" data-placement="bottom" data-toggle="tooltip" id="post_btn_insert" title="Añadir fotos">
-                                        <i class="material-icons">
-                                            add_photo_alternate
-                                        </i>
-                                    </button>
-                                    <button class="btn-fab btn " data-placement="bottom" data-toggle="tooltip" id="post_btn_insert">
-                                        <i class="material-icons">
-                                            send
-                                        </i>
-                                    </button>
-                                </div>
-                                <div class="col-md-4">
-                                    <button class="ancho_auto btn btn-primary row">
-                                        publicar
-                                    </button>
+                            <div id="div_txtarea_post">
+                                <textarea id="txt_area_post" name="" placeholder="Escribe algo ...">
+                                </textarea>
+                                <div class="row container">
+                                    <div class="col-md-2">
+                                        <button class="btn dropdown dropdown-toggle " data-placement="left" data-toggle="tooltip" style="color:white;" title="Modo de publicación" type="button">
+                                            público
+                                        </button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button class="btn btn-fab glyphicon glyphicon-edit" data-placement="bottom" data-toggle="tooltip" id="post_btn_insert" title="Añadir archivos" type="button">
+                                        </button>
+                                        <button class="btn btn-fab glyphicon glyphicon-file" data-placement="bottom" data-toggle="tooltip" id="post_btn_insert" title="Añadir fotos">
+                                        </button>
+                                        <button class="btn-fab btn glyphicon glyphicon-import" data-placement="bottom" data-toggle="tooltip" id="post_btn_insert">
+                                        </button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button class="btn btn-primary glyphicon glyphicon-send">
+                                            publicar
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="container" id="publicacion">
+                    <div>
                         <div>
                             <img alt="foto de perfil" class="img-responsive img_big img-raised rounded-circle img-fluid" id="foto_perfil" src="assets/img/tablero-de-ajedrez.png">
                             </img>
@@ -210,66 +200,57 @@
                         </div>
                         <div id="social">
                             <div class="row container">
-                                <div class="col-lg-6" id="icon_like">
+                                <div class="col-md-6" id="icon_like">
                                     <button class="btn btn-white data-toggle=" data-placement="left" title="Deja un mensaje" tooltip"="" type="button">
-                                        <i class="material-icons">
-                                            thumb_up_alt
-                                        </i>
-                                        Like
                                     </button>
                                 </div>
-                                <div class="col-lg-6" id="icon_comment">
-                                    <button "="" class=" btn btn-white data-toggle=" data-placement="left" title="Tooltip on left" tooltip"="">
-                                        <i class="material-icons">
-                                            comment
-                                        </i>
-                                        Comentar
-                                    </button>
+                                <div class="col-md-5" id="icon_comment">
                                 </div>
                             </div>
                         </div>
                         <div id="comentarios">
                             <div id="img_usuario">
                                 <div>
-                                    <div>
-                                        <img "="" alt="" class="img-raised rounded-circle img-fluid img_small" src="assets/img/tablero-de-ajedrez.png">
-                                            <label for="">
-                                                nombre de la persona que publica
-                                            </label>
-                                        </img>
-                                    </div>
-                                    <div style="padding: 0px">
-                                        <input class="ancho_auto" id="input_comment" placeholder="Comentar ..." type="text">
-                                        </input>
-                                    </div>
+                                    <img alt="" class="img-raised rounded-circle img-fluid img_small" src="assets/img/tablero-de-ajedrez.png">
+                                        <label for="">
+                                            nombre de la persona que publica
+                                        </label>
+                                    </img>
+                                </div>
+                                <div style="padding: 0px">
+                                    <input class="ancho_auto" id="input_comment" placeholder="Comentar ..." type="text">
+                                    </input>
                                 </div>
                             </div>
+                        </div>
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis alias veritatis in nihil beatae, nemo ab repellendus accusamus, dignissimos illum vero laborum perspiciatis fugiat modi tenetur aperiam natus esse at!
                         </div>
                     </div>
                 </div>
             </div>
-            <footer class="form-control panel-footer btn-primary">
-            </footer>
-            <script src="./assets/js/core/jquery.min.js" type="text/javascript">
-            </script>
-            <script src="./assets/js/core/popper.min.js" type="text/javascript">
-            </script>
-            <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript">
-            </script>
-            <script src="./assets/js/plugins/moment.min.js">
-            </script>
-            <!--  Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-            <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript">
-            </script>
-            <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-            <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript">
-            </script>
-            <!--  Plugin for Sharrre btn -->
-            <script src="./assets/js/plugins/jquery.sharrre.js" type="text/javascript">
-            </script>
-            <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-            <script src="./assets/js/material-kit.js?v=2.0.4" type="text/javascript">
-            </script>
         </div>
+        <footer class="form-control panel-footer btn-primary">
+        </footer>
+        <script src="./assets/js/core/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="./assets/js/core/popper.min.js" type="text/javascript">
+        </script>
+        <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript">
+        </script>
+        <script src="./assets/js/plugins/moment.min.js">
+        </script>
+        <!--  Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+        <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript">
+        </script>
+        <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+        <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript">
+        </script>
+        <!--  Plugin for Sharrre btn -->
+        <script src="./assets/js/plugins/jquery.sharrre.js" type="text/javascript">
+        </script>
+        <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+        <script src="./assets/js/material-kit.js?v=2.0.4" type="text/javascript">
+        </script>
     </body>
 </html>
