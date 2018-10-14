@@ -29,7 +29,7 @@
         </script>
     </head>
     <body>
-        <nav class="navbar navbar-inverse ">
+        <nav class="navbar navbar-inverse " style="border-radius: 0px">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button">
@@ -47,7 +47,7 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <form action="#" class="navbar-form navbar-left">
                         <div class="form-group">
-                            <input class="form-control" placeholder="Buscar..." type="text">
+                            <input class="form-control" id="form_search" placeholder="Buscar..." type="text">
                             </input>
                         </div>
                         <button class="glyphicon glyphicon-search btn btn-default" type="submit">
@@ -75,6 +75,58 @@
                                             </a>
                                         </div>
                                     </div>
+                                    <a href="#" id="name_sms">
+                                        <div>
+                                            <img alt="" class="img_small img-rounded img-circle" src="assets/img/puican.jpg">
+                                                hambler escobedo
+                                                <span class="badge span2 ">
+                                                    34
+                                                </span>
+                                                <p id="sms">
+                                                    hola
+                                                </p>
+                                            </img>
+                                        </div>
+                                    </a>
+                                    <a href="#" id="name_sms">
+                                        <div>
+                                            <img alt="" class="img_small img-rounded img-circle" src="assets/img/puican.jpg">
+                                                hambler escobedo
+                                                <span class="badge span2 ">
+                                                    34
+                                                </span>
+                                                <p id="sms">
+                                                    hola
+                                                </p>
+                                            </img>
+                                        </div>
+                                    </a>
+                                    <a href="#" id="name_sms">
+                                        <div>
+                                            <img alt="" class="img_small img-rounded img-circle" src="assets/img/puican.jpg">
+                                                hambler escobedo
+                                                <span class="badge span2 ">
+                                                    34
+                                                </span>
+                                                <p id="sms">
+                                                    hola
+                                                </p>
+                                            </img>
+                                        </div>
+                                    </a>
+                                    <a href="#" id="name_sms">
+                                        <div>
+                                            <img alt="" class="img_small img-rounded img-circle" src="assets/img/puican.jpg">
+                                                hambler escobedo
+                                                <span class="badge span2 ">
+                                                    34
+                                                </span>
+                                                <p id="sms">
+                                                    hola
+                                                </p>
+                                            </img>
+                                        </div>
+                                    </a>
                                     <a href="#" id="name_sms">
                                         <div>
                                             <img alt="" class="img_small img-rounded img-circle" src="assets/img/puican.jpg">
@@ -140,92 +192,33 @@
                         </div>
                     </div>
                 </div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum aperiam officiis consequuntur ipsum eum nulla rem, odio accusamus quae enim aliquid corporis unde soluta quia quos a beatae, ratione possimus!
                 <div class="col-md-7">
-                    <div>
-                        <div class="container-fluid">
-                            <div class="row" id="barra_user">
-                                <div class="col-md-2" id="img_user_publicar">
-                                    <img alt="foto de perfil" class="img-rounded img-circle img-fluid" id="foto_perfil" src="assets/img/tablero-de-ajedrez.png">
-                                    </img>
-                                </div>
-                                <div class="col-md-7 container-fluid" id="name_user_publicar">
-                                    <label id="name_user_post">
-                                        Willy fernandez Gastelo
-                                    </label>
-                                </div>
+                    <div class="container-fluid" id="postear">
+                        <div class="row" id="head_post">
+                            <img alt="#" class="img-rounded img-circle img_small" src="assets/img/gustavo.jpg">
+                            </img>
+                            <a href="#">
+                                Gustavo Reyes Castro
+                            </a>
+                            <div class="navbar-right glyphicon glyphicon-edit" id="mas_posted">
                             </div>
-                            <div id="div_txtarea_post">
-                                <textarea id="txt_area_post" name="" placeholder="Escribe algo ...">
-                                </textarea>
-                                <div class="row container">
-                                    <div class="col-md-2">
-                                        <button class="btn dropdown dropdown-toggle " data-placement="left" data-toggle="tooltip" style="color:white;" title="Modo de publicación" type="button">
-                                            público
-                                        </button>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <button class="btn btn-fab glyphicon glyphicon-edit" data-placement="bottom" data-toggle="tooltip" id="post_btn_insert" title="Añadir archivos" type="button">
-                                        </button>
-                                        <button class="btn btn-fab glyphicon glyphicon-file" data-placement="bottom" data-toggle="tooltip" id="post_btn_insert" title="Añadir fotos">
-                                        </button>
-                                        <button class="btn-fab btn glyphicon glyphicon-import" data-placement="bottom" data-toggle="tooltip" id="post_btn_insert">
-                                        </button>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <button class="btn btn-primary glyphicon glyphicon-send">
-                                            publicar
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
+                        <div id="txt_post">
+                            <textarea cols="30" id="" name="" rows="10">
+                            </textarea>
+                        </div>
+                        <div id="opciones_post">
+                            <button class="btn ">
+                            </button>
+                            <button class="btn btn-toolbar btn-link">
+                            </button>
+                            <button class="btn btn-toolbar btn-success">
+                            </button>
+                            <button class="btn btn-toolbar btn-primary">
+                            </button>
                         </div>
                     </div>
-                    <div>
-                        <div>
-                            <img alt="foto de perfil" class="img-responsive img_big img-raised rounded-circle img-fluid" id="foto_perfil" src="assets/img/tablero-de-ajedrez.png">
-                            </img>
-                            <label for="" id="name_user_posts">
-                                Willy fernandez Gastelo
-                            </label>
-                        </div>
-                        <div class="container" id="txt_post">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima itaque nulla ipsa.
-                            </p>
-                        </div>
-                        <div id="post">
-                            <img alt="" class="img_post img_center" src="assets/img/apple-icon.png">
-                            </img>
-                        </div>
-                        <div id="social">
-                            <div class="row container">
-                                <div class="col-md-6" id="icon_like">
-                                    <button class="btn btn-white data-toggle=" data-placement="left" title="Deja un mensaje" tooltip"="" type="button">
-                                    </button>
-                                </div>
-                                <div class="col-md-5" id="icon_comment">
-                                </div>
-                            </div>
-                        </div>
-                        <div id="comentarios">
-                            <div id="img_usuario">
-                                <div>
-                                    <img alt="" class="img-raised rounded-circle img-fluid img_small" src="assets/img/tablero-de-ajedrez.png">
-                                        <label for="">
-                                            nombre de la persona que publica
-                                        </label>
-                                    </img>
-                                </div>
-                                <div style="padding: 0px">
-                                    <input class="ancho_auto" id="input_comment" placeholder="Comentar ..." type="text">
-                                    </input>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis alias veritatis in nihil beatae, nemo ab repellendus accusamus, dignissimos illum vero laborum perspiciatis fugiat modi tenetur aperiam natus esse at!
-                        </div>
+                    <div id="posts">
                     </div>
                 </div>
             </div>

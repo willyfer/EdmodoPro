@@ -178,5 +178,17 @@
     background-color: red;
 }
 .ul2 {
+    border-color: cyan;
+    border-style: solid;
+    border-width: 1px;
     width: 250px;
+    margin: 5px;
+    padding: 5px;
+}
+#form_search {
+    width: 400px;
+}
+#head_post {
+    padding: 5px;
+    margin: 7px;
 }
