@@ -170,3 +170,13 @@
     background-color: white;
     border-radius: 3px;
 }
+#head_sms {
+    padding: 5px;
+    margin: 2px;
+}
+.span2 {
+    background-color: red;
+}
+.ul2 {
+    width: 250px;
+}
