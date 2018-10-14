@@ -150,3 +150,23 @@
 #navegador {
     background-color: red;
 }
+#name_sms {
+    padding: 5px;
+    margin: 3px;
+    font-style: none;
+    text-decoration: none;
+    text-decoration-style: none;
+    font-size: 13px;
+    border-color: cyan;
+    border-width: 1px;
+    border-style: solid;
+    color: white;
+    background-color: #2b374d;
+    border-radius: 5px;
+}
+#sms {
+    margin: 3px;
+    color: black;
+    background-color: white;
+    border-radius: 3px;
+}
