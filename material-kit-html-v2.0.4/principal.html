@@ -29,7 +29,7 @@
         </script>
     </head>
     <body>
-        <nav class="navbar navbar-inverse " style="border-radius: 0px">
+        <nav class="navbar navbar-inverse " id="fila_nav" style="border-radius: 0px">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button">
@@ -174,8 +174,8 @@
         </nav>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="row" id="perfil">
+                <div class="col-md-4 ">
+                    <div class="row btn-primary " id="perfil">
                         <div>
                             <img alt="foto de perfil" class=" img_big img-raised rounded-circle img-fluid" id="foto_perfil" src="assets/img/tablero-de-ajedrez.png">
                             </img>
@@ -200,30 +200,70 @@
                             <a href="#">
                                 Gustavo Reyes Castro
                             </a>
-                            <div class="navbar-right glyphicon glyphicon-edit" id="mas_posted">
-                            </div>
+                            <a class="navbar-right glyphicon glyphicon-edit " id="mas_posted">
+                            </a>
                         </div>
                         <div id="txt_post">
-                            <textarea cols="30" id="" name="" rows="10">
+                            <textarea class="ancho_auto" id="txt_area_post" name="" placeholder="Postaer algo..." rows="3">
                             </textarea>
                         </div>
-                        <div id="opciones_post">
-                            <button class="btn ">
+                        <div class="container-fluid" id="opciones_post">
+                            <button class="btn btn-white">
+                                <span class="caret">
+                                </span>
+                                publicar en
                             </button>
-                            <button class="btn btn-toolbar btn-link">
+                            <button class="btn btn-primary glyphicon glyphicon-paperclip">
                             </button>
-                            <button class="btn btn-toolbar btn-success">
+                            <button class="btn glyphicon glyphicon-picture btn-primary">
                             </button>
-                            <button class="btn btn-toolbar btn-primary">
+                            <button class="btn glyphicon glyphicon-file btn-primary">
                             </button>
+                            <button class="btn btn-primary glyphicon glyphicon-flag">
+                            </button>
+                            <button class="btn navbar-right glyphicon glyphicon-send btn-success">
+                                Publicar
+                            </button>
+                        </div>
+                        <div class="progress" id="carga_files">
+                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-striped active" role="progressbar" style="width:100%">
+                                100%
+                            </div>
                         </div>
                     </div>
                     <div id="posts">
+                        <div class="row" id="head_postes">
+                            <img alt="#" class="img-rounded img-circle img_small" src="assets/img/willy.jpg">
+                            </img>
+                            <a href="#">
+                                Willy fernandez Gastelo
+                                <span class="glyphicon glyphicon-play">
+                                    <a href="#">
+                                        curso I informatica
+                                    </a>
+                                </span>
+                            </a>
+                        </div>
+                        <div id_posteado="">
+                            <textarea class="ancho_auto" id="txtarea_posts" name="#" rows="1">
+                            </textarea>
+                            <img alt="" class="img_big" src="assets/img/Madoka.jpg">
+                                imagen dentro del text area
+                            </img>
+                        </div>
+                        <div id="options_post">
+                            <button class="btn btn-primary glyphicon glyphicon-heart">
+                                like
+                            </button>
+                            <button class="btn btn-white glyphicon glyphicon-comment">
+                                Comentar
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <footer class="form-control panel-footer btn-primary">
+        <footer class=" panel-footer btn-primary">
         </footer>
         <script src="./assets/js/core/jquery.min.js" type="text/javascript">
         </script>

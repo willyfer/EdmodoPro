@@ -14,15 +14,12 @@
 }
 #fila_nav {
     background-color: #2b374d;
-    border-radius: 5px;
-    padding: 9px;
-    align-content: center;
 }
 #foto_perfil {
     margin: 10px;
 }
 #perfil {
-    background-color: #0066cc;
+    background-color: #2b374d;
     border-radius: 8px;
     border-bottom-style: groove;
 }
@@ -93,19 +90,15 @@
 #main {
     margin-top: 9px;
 }
-#div_txtarea_post {
-    height: 140px;
-    padding: 0px;
+#txt_post {
+    padding: 5px;
     margin: 2px;
+    align-content: center;
     background-color: #2b374d;
     border-radius: 0px 0px 8px 8px;
 }
 #txt_area_post {
-    width: 100%;
-    margin: 1px;
-    padding: 7px;
-    height: 6em;
-    border-radius: 0px 0px 8px 8px;
+    border-radius: 0px 13px 8px 8px;
 }
 #name_user_publicar {
     margin: 8px, 8px, 8px, 8px;
@@ -174,7 +167,7 @@
 }
 #head_sms {
     padding: 5px;
-    margin: 2px;
+    margin: 0px;
 }
 .span2 {
     background-color: red;
@@ -192,5 +185,33 @@
 }
 #head_post {
     padding: 5px;
-    margin: 7px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-radius: 8px 8px 0px 0px;
+    border-style: solid;
+    border-color: #2b374d;
+    color: white;
+}
+#mas_posted {
+    margin: 1px;
+}
+#head_post>a {
+    color: white;
+    padding: 3px;
+}
+#carga_files {
+    padding: 0px;
+    margin: 5px;
+}
+#postear {
+    background-color: #2b374d;
+    border-bottom: solid;
+    border-color: #2b374d;
+}
+#posts {
+    padding: 5px;
+    margin: 5px;
+    border-bottom: solid;
+    border-width: 3px;
+    border-color: grey;
 }
