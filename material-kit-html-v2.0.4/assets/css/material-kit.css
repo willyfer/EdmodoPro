@@ -167,7 +167,7 @@ sup {
 }
 
 a {
-  color: #9c27b0;
+  color:black;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -4156,7 +4156,9 @@ tbody.collapse.show {
   flex-grow: 1;
   text-align: center;
 }
-
+.card-signup .checkbox {
+  margin-top: 20px;
+}
 .tab-content>.tab-pane {
   display: none;
 }
@@ -12179,7 +12181,7 @@ fieldset[disabled] .is-focused .switch label:focus {
 
 .form-control,
 .is-focused .form-control {
-  background-image: linear-gradient(to top, #9c27b0 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
+  background-image: linear-gradient(to top, #00BCD4 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
 }
 
 .form-control:invalid {
@@ -16358,7 +16360,7 @@ footer .pull-center {
 .card.bg-primary,
 .card.card-rotate.bg-primary .front,
 .card.card-rotate.bg-primary .back {
-  background: linear-gradient(60deg, #ab47bc, #7b1fa2);
+  background: linear-gradient(60deg, #26c6da, #00BCD4);
 }
 
 .card .card-header-info,
@@ -16397,7 +16399,7 @@ footer .pull-center {
 }
 
 .card .card-header-primary {
-  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(156, 39, 176, 0.6);
+  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px #26bbda87;
 }
 
 .card .card-header-danger {
