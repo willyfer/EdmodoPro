@@ -1,3 +1,3 @@
 # EdmodoPro
 Universidad Nacional Pedro Ruiz Gallo
-developers: Willy Fernandez & Gustabo Reyes
+developers: Willy Fernandez - Gustavo Reyes - Puican El Solitario
