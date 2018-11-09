@@ -13,23 +13,27 @@
     color: white;
 }
 #fila_nav {
-    background-color: #2b374d;
+    background-color: #6A1B9A;
+    padding: 30px;
+}
+#myNavbar1 {
+    background-color: white;
 }
 #foto_perfil {
     margin: 10px;
 }
 #perfil {
-    background-color: #2b374d;
-    border-radius: 8px;
-    border-bottom-style: groove;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 3px;
+    color: black;
+    border-color: #1976D2;
+    border-style: solid;
 }
 #usuario {
     margin-right: 10px;
 }
-#nav_principal {
-    border-radius: 10px;
-    border-style: ridge;
-}
+#nav_principal {}
 .img_small {
     height: 30;
     width: 30;
@@ -45,6 +49,9 @@
 .img_big {
     height: 70;
     width: 70;
+}
+.img_logo {
+    width: 190px;
 }
 #publicacion {
     background-color: white;
@@ -94,7 +101,7 @@
     padding: 5px;
     margin: 2px;
     align-content: center;
-    background-color: #2b374d;
+    background-color: #6A1B9A;
     border-radius: 0px 0px 8px 8px;
 }
 #txt_area_post {
@@ -107,6 +114,7 @@
 }
 #btn_send {
     position: absolute;
+    background-color: #6A1B9A;
     font-size: 36px;
 }
 #name_user_post {
@@ -188,16 +196,12 @@
     padding: 5px;
     margin-left: 2px;
     margin-right: 2px;
-    border-radius: 8px 8px 0px 0px;
-    border-style: solid;
-    border-color: #2b374d;
-    color: white;
 }
 #mas_posted {
     margin: 1px;
 }
 #head_post>a {
-    color: white;
+    color: #1976D2;
     padding: 3px;
 }
 #carga_files {
@@ -205,9 +209,8 @@
     margin: 5px;
 }
 #postear {
-    background-color: #2b374d;
-    border-bottom: solid;
-    border-color: #2b374d;
+    background-color: white;
+    color: black;
 }
 #posts {
     padding: 7px;
@@ -215,4 +218,13 @@
     border-bottom: solid;
     border-width: 3px;
     border-color: grey;
+    background-color: white;
+}
+#btn_buscar {
+    background-color: #E64A19;
+    color: white;
+}
+#btn_send_publicacion {
+    background-color: #E64A19;
+    color: white;
 }

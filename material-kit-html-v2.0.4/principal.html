@@ -32,7 +32,25 @@
     </head>
 </html>
 <body>
-    <nav class="navbar navbar-inverse " id="fila_nav" style="border-radius: 0px">
+    <div class="collapse navbar-collapse" id="myNavbar1">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="#" style="font-family: inherit">
+                    <span class="glyphicon glyphicon-user">
+                    </span>
+                    Sign Up
+                </a>
+            </li>
+            <li>
+                <a href="examples/login-page.html" s="" style="font-family: inherit">
+                    <span class="glyphicon glyphicon-log-in">
+                    </span>
+                    Cerrar Session
+                </a>
+            </li>
+        </ul>
+    </div>
+    <nav class="navbar navbar-inverse " id="fila_nav">
         <div class="container-fluid row ">
             <div class="navbar-header col-md-3">
                 <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button">
@@ -43,37 +61,19 @@
                     <span class="icon-bar">
                     </span>
                 </button>
-                <a class="navbar-brand" href="#">
-                    <img alt="#" class="img-responsive" src="assets/img/logo2.png">
+                <a class="" href="#">
+                    <img alt="#" class="img-responsive img_logo" src="assets/img/logo2.png">
                     </img>
                 </a>
             </div>
             <div class="col-md-8">
-                <div class="collapse navbar-collapse" id="myNavbar1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#">
-                                <span class="glyphicon glyphicon-user">
-                                </span>
-                                Sign Up
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="glyphicon glyphicon-log-in">
-                                </span>
-                                Login
-                            </a>
-                        </li>
-                    </ul>
-                </div>
                 <div class="collapse navbar-collapse" id="myNavbar2">
                     <form action="#" class="navbar-form navbar-left">
                         <div class="form-group">
                             <input class="form-control" id="form_search" placeholder="Buscar..." type="text">
                             </input>
                         </div>
-                        <button class="glyphicon glyphicon-search btn btn-default" type="submit">
+                        <button class="btn glyphicon glyphicon-search " id="btn_buscar" type="submit">
                         </button>
                     </form>
                     <ul class="nav navbar-nav">
@@ -200,26 +200,26 @@
                     </div>
                 </div>
                 <div>
-                    <button class="btn btn-primary" id="pruebaxxx" onclick="cambiar_color()">
+                    <button class="btn btn-primary btn-block" id="pruebaxxx" onclick="cambiar_color()">
                         curso 1
                     </button>
-                    <button class="btn btn-primary" onclick="location.href='php/conexion.php'">
+                    <button class="btn btn-primary btn-block glyphicon glyphicon-link" onclick="location.href='php/conexion.php'">
                         curso 2
                     </button>
-                    <button class="btn btn-primary" onclick="location.href='php/insert_post.php'">
+                    <button class="btn btn-primary btn-block" onclick="location.href='php/insert_post.php'">
                         curso 3
                     </button>
-                    <button class="btn btn-primary">
+                    <button class="btn btn-primary btn-block">
                         curso 4
                     </button>
                 </div>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7" style="background: gray; padding: 10px;margin: 5px">
                 <div class="container-fluid" id="postear">
                     <div class="row" id="head_post">
                         <img alt="#" class="img-rounded img-circle img_small" src="assets/img/gustavo.jpg">
                         </img>
-                        <a href="#">
+                        <a href="examples/profile-page.html">
                             Gustavo Reyes Castro
                         </a>
                         <a class="navbar-right glyphicon glyphicon-edit " id="mas_posted">
@@ -243,7 +243,7 @@
                         </button>
                         <button class="btn btn-primary glyphicon glyphicon-flag">
                         </button>
-                        <button class="btn navbar-right glyphicon glyphicon-send btn-success">
+                        <button class="btn navbar-right glyphicon glyphicon-send " id="btn_send_publicacion">
                             Publicar
                         </button>
                     </div>
