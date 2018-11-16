@@ -1,6 +1,9 @@
 .visible {
     visibility: visible;
 }
+body {
+    background-color: #1f2735cc;
+}
 #titulo_edmodo {
     color: white;
     font-style: bold;
@@ -13,8 +16,10 @@
     color: white;
 }
 #fila_nav {
-    background-color: #6A1B9A;
-    padding: 30px;
+    background-color: #232830e6;
+    padding: 7px;
+    font-family: 'Allerta', sans-serif;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 #myNavbar1 {
     background-color: white;
@@ -23,15 +28,16 @@
     margin: 10px;
 }
 #perfil {
-    margin-bottom: 20px;
-    background-color: white;
-    border-radius: 3px;
-    color: black;
-    border-color: #1976D2;
-    border-style: solid;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    color: white;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 #usuario {
     margin-right: 10px;
+}
+nav {
+    overflow: hidden;
 }
 #nav_principal {}
 .img_small {
@@ -51,6 +57,7 @@
     width: 70;
 }
 .img_logo {
+    padding: 10px;
     width: 190px;
 }
 #publicacion {
@@ -184,14 +191,11 @@
     border-color: black;
     border-style: solid;
     border-width: 3px;
-    width: 250px;
     margin: 5px;
     padding: 5px;
     border-radius: 0px 10px 10px 10px;
 }
-#form_search {
-    width: 400px;
-}
+#form_search {}
 #head_post {
     padding: 5px;
     margin-left: 2px;
@@ -213,7 +217,6 @@
     color: black;
 }
 #posts {
-    padding: 7px;
     margin: 7px;
     border-bottom: solid;
     border-width: 3px;
@@ -227,4 +230,103 @@
 #btn_send_publicacion {
     background-color: #E64A19;
     color: white;
+}
+.menu-bar {
+    display: none;
+}
+#fila_nav ul {
+    display: flex;
+}
+#fila_nav ul li {
+    list-style: none;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+#fila_nav ul li #mensaje {
+    display: none;
+    visibility: hidden;
+}
+#fila_nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    align-items: center;
+    padding: 8px;
+}
+.span_w {
+    margin-right: 9px;
+}
+.rigth_navbar {
+    float: right;
+}
+#fila_nav ul li a:hover {
+    background-color: #4E95F2;
+    text-decoration: none;
+    color: white;
+    display: block;
+    border-radius: 4px;
+    border-color: #4E95F2;
+}
+@media screen and (max-width: 800px) {
+    #fila_nav {
+        width: 80%;
+        height: 100%;
+        margin: 0px;
+        position: fixed;
+    }
+    #fila_nav div form button {
+        width: 100%;
+    }
+    #form_search {
+        width: 100%;
+    }
+    #fila_nav ul li {
+        display: block;
+        border-bottom-width: :1px;
+        border-style: solid;
+        border-color: white;
+    }
+    .menu-bar {
+        display: block;
+        width: 100%;
+        background-color: red;
+        color: white;
+    }
+    .menu-bar .bt-menu {
+        color: white;
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+.menu-bar .bt-menu span {
+    float: right;
+}
+#container_perfil {
+    padding: 20px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #707d90b3;
+    border-radius: 5px;
+    height: 100%;
+}
+#container_posts {
+    overflow: hidden;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+#conatiner_posts_2 {
+    height: 700px;
+    width: calc(100% + 30px);
+    overflow-y: scroll;
+}
+footer {
+    height: 200px;
+    background-color: black;
+    color: white;
+    padding: 30px;
 }
