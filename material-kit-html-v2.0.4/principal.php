@@ -1,3 +1,7 @@
+<?php 
+$lista_sms = array('pedro' => 'hola como estas ', 'rosa' => 'hi', 'juan' => 'pagame', 'pepe' => 'cv', 'crush' => 'te amo' );
+
+ ?>
 <!DOCTYPE doctype html>
 <meta charset="utf-8"/>
 <html lang="en">
@@ -5,12 +9,10 @@
         <title>
             Edmodo Pro
         </title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-        </script>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-        </link>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-        </script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
         <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
         </link>
         <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
@@ -31,14 +33,15 @@
     </head>
     <body>
         <header style="margin-bottom: 7px">
-            <div class="menu-bar">
-                <a class="bt-menu " href="#">
+             <div class="menu-bar">
+                <a class="bt-menu" href="#">
                     <span class="glyphicon glyphicon-list">
                     </span>
                     Menu
                 </a>
             </div>
             <nav id="fila_nav">
+
                 <ul>
                     <li>
                         <img alt="#" class="img-responsive img_logo" src="assets/img/logo2.png ">
@@ -54,17 +57,31 @@
                             </form>
                         </div>
                     </li>
-                    <li class="active ">
+                    <li class="active">
                         <a class=" " href="#">
                             INICIO
                         </a>
                     </li>
                     <li>
-                        <a href="#" onclick="php/motrar_sms.js">
+                         
+                             <a href="#" id="chat_sms" onclick=" ">
                             MENSAJES
                         </a>
-                        <div id="mensaje">
+                        <div class="mensaje">   
+ 
+                                 <?php  
+                               foreach ($lista_sms as $sms => $value) {
+                                    echo '<ul >' .  ' <img alt="#" class="img-responsive img_small img-circle" src="assets/img/willy.jpg ">
+                        </img>' . '<li>' . $sms . '<a>' . $value . '</a>' . '</li>' . '</ul>';
+                               }
+     
+                                 ?>  
+                                 <a href="#" style="color: black"> ver todos </a>                            
+                     
+
                         </div>
+                              
+                  
                     </li>
                     <li>
                         <a href="#">
@@ -112,7 +129,7 @@
                         </div>
                     </div>
                     <div>
-                        <button class="btn btn-primary btn-block" id="pruebaxxx" onclick="cambiar_color()">
+                        <button class="btn btn-primary btn-block" id="pruebaxxx" onclick="">
                             curso 1
                         </button>
                         <button class="btn btn-primary btn-block glyphicon glyphicon-link" onclick="location.href='php/conexion.php'">
@@ -126,17 +143,16 @@
                         </button>
                     </div>
                 </div>
-                <div class=" col-md-7" id="container_posts">
-                    <iframe scrolling='no""' src="plantillas/platilla_publicaciones.html" style="overflow-y: hidden;" width="100%">
+                <div class=" col-md-7" id="container_posts" style="height: 100%">
+                    <iframe scrolling='no' src="plantillas/platilla_publicaciones.html" style="overflow: hidden;height: 100%" width="100%">
                     </iframe>
                 </div>
             </div>
         </div>
-        <iframe scrolling="no" src="plantillas/plantilla_footer.html" width="100%">
+        <iframe scrolling="no" src="plantillas/plantilla_footer.html" width="100%" id="iframe_footer">
         </iframe>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-        </script>
-        <script src="assets/js/willy.js">
+       
+         <script src="assets/js/menu.js">
         </script>
         <script src="php/motrar_sms.js">
         </script>
