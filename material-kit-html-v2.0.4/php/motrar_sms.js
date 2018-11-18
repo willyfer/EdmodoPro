@@ -1,14 +1,14 @@
 $(document).ready(function() {
     $cont = 0
-    var x = window.matchMedia("(max-width: 1100px)")
+    var x = window.matchMedia("(max-width: 960px)")
     $("#chat_sms").click(function() {
-        if (x == true) {
+        if (x.matches) {
             $(".mensaje").css({
                 "display": 'none',
             })
         } else {
             $("#fila_nav").css({
-                "overflow": 'initial',
+                "overflow": 'flex',
             })
             $("#chats_sms").css({})
             if ($cont == 0) {

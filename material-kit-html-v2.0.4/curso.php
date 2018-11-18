@@ -133,7 +133,7 @@ $lista_sms = array('pedro' => 'hola como estas ', 'rosa' => 'hi', 'juan' => 'pag
                     </div>
                     <div>
                         <label for="#"> CURSOS</label>
-                        <button class="btn btn-primary btn-block"  onclick="curso.php">
+                        <button class="btn btn-primary btn-block" id="pruebaxxx" onclick="">
                             curso 1
                         </button>
                         <button class="btn btn-primary btn-block glyphicon glyphicon-link" onclick="location.href='php/conexion.php'">
@@ -142,7 +142,7 @@ $lista_sms = array('pedro' => 'hola como estas ', 'rosa' => 'hi', 'juan' => 'pag
                         <button class="btn btn-primary btn-block" onclick="location.href='php/insert_post.php'">
                             curso 3
                         </button>
-                        <button class="btn btn-primary btn-block" onclick="location.href='curso.php'">
+                        <button class="btn btn-primary btn-block">
                             curso 4
                         </button>
                     </div>
@@ -150,35 +150,8 @@ $lista_sms = array('pedro' => 'hola como estas ', 'rosa' => 'hi', 'juan' => 'pag
                 <div class=" col-md-7" id="container_posts" >
                      <div id="conatiner_posts_2">
             <div id="posts">
-                <div class="row" id="head_postes" style="padding:5px ;margin:5px">
-                    <img alt="#" class="img-rounded img-circle img_small" src="assets/img/willy.jpg">
-                    </img>
-                    <a href="#" style="color: black">
-                        Willy fernandez Gastelo
-                        <span class="glyphicon glyphicon-play">
-                            <a href="#">
-                                curso I informatica
-                            </a>
-                        </span>
-                    </a>
-                </div>
-                <div class="" id="posteado">
-                    <label for="#" style="color: black ;font-size: 14px">
-                        publicacion decripcion
-                    </label>
-                    <div>
-                        <img alt="" class="img_big center-block" src="assets/img/Madoka.jpg">
-                        </img>
-                    </div>
-                </div>
-                <div id="options_post">
-                    <button class="btn btn-primary glyphicon glyphicon-heart">
-                        like
-                    </button>
-                    <button class="btn btn-white glyphicon glyphicon-comment">
-                        Comentar
-                    </button>
-                </div>
+                 
+              
             </div>
         </div>
                 </div>

@@ -2,7 +2,10 @@
     visibility: visible;
 }
 body {
-    background-color: #1f2735cc;
+    background-color: #606365;
+}
+.activo {
+    color: #fed136 !important;
 }
 #titulo_edmodo {
     color: white;
@@ -16,13 +19,12 @@ body {
     color: white;
 }
 #fila_nav {
-    background-color: #232830e6;
+    background-color: #212529;
     padding: 7px;
-    width: 90%;
     left: 0px;
-    margin-top: 20px;
-    border-radius: 5px;
-    font-family: 'Allerta', sans-serif;
+    max-width: 1344px;
+    border-radius: 1px 5px 2px 1px;
+    font-family: 'Nanum Gothic', sans-serif;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 #myNavbar1 {
@@ -40,8 +42,12 @@ body {
 #usuario {
     margin-right: 10px;
 }
-nav {
-    overflow: hidden;
+header {
+    overflow: initial;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 0px;
 }
 #nav_principal {}
 .img_small {
@@ -228,7 +234,7 @@ nav {
     background-color: white;
 }
 #btn_buscar {
-    background-color: #E64A19;
+    background-color: #fed136;
     color: white;
 }
 #btn_send_publicacion {
@@ -245,7 +251,10 @@ nav {
     list-style: none;
     float: left;
     display: flex;
-    text-align: center;
+    align-items: center;
+}
+#fila_nav ul li a:hover {
+    color: #fed136;
 }
 #fila_nav ul li .mensaje {
     display: none;
@@ -281,13 +290,11 @@ nav {
 .rigth_navbar {
     float: right;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 960px) {
     #container_perfil {
         z-index: 1;
-        top: 50px;
     }
     #container_posts {
-        top: 50px;
         z-index: 1;
     }
     #footer_w {
@@ -326,7 +333,8 @@ nav {
         width: 100%;
         position: fixed;
         z-index: 2;
-        background-color: red;
+        font-family: 'Nanum Gothic', sans-serif;
+        background-color: #212529;
         color: white;
     }
     .menu-bar .bt-menu {
@@ -347,27 +355,23 @@ nav {
     justify-content: center;
     background-color: #707d90b3;
     border-radius: 5px;
-    height: 100%;
 }
 #container_posts {
+    height: 100%;
     overflow: hidden;
     margin: 20px;
     border-radius: 5px;
     background-color: white;
 }
 #conatiner_posts_2 {
-    height: 100%;
     width: calc(100% + 30px);
     overflow-y: scroll;
 }
-footer {
+#footer_w {
     height: 200px;
     background-color: black;
     color: white;
     padding: 30px;
+    font-family: 'Oswald';
     z-index: 1;
 }
-#footer_w {
-    top: 80px;
-}
-#iframe_footer {}
