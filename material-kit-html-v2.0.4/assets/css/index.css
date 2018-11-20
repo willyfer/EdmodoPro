@@ -1,0 +1,10 @@
+.header-filter::before {
+    background-color: rgb(0, 0, 0, 0) !important;
+    background-image: url(../img/estudiante.png);
+}
+html {
+    font-size: 16px;
+}
+.section {
+    padding: 10px;
+}
