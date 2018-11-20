@@ -388,3 +388,7 @@ header {
     align-items: center;
 }
 #btn_calendario {}
+.header-filter::before {
+    background-color: rgb(0, 0, 0, 0) !important;
+    background-image: url(../img/estudiante.png);
+}

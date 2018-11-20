@@ -9,20 +9,26 @@
             <link href="./assets/img/apple-icon.png" rel="apple-touch-icon" sizes="76x76">
                 <link href="./assets/img/favicon.png" rel="icon" type="image/png">
                     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
-                    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport"/>
-                    <!--     Fonts and icons     -->
-                    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" rel="stylesheet" type="text/css"/>
-                    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-                        <!-- CSS Files -->
-                        <link href="./assets/css/material-kit.css?v=2.0.4" rel="stylesheet"/>
-                        <!-- CSS Just for demo purpose, don't include it in your project -->
-                        <link href="./assets/demo/demo.css" rel="stylesheet"/>
+                    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" rel="stylesheet" type="text/css">
+                        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+                            <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport"/>
+                            <!--     Fonts and icons     -->
+                            <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" rel="stylesheet" type="text/css"/>
+                            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+                                <!-- CSS Files -->
+                                <link href="./assets/css/material-kit.css?v=2.0.4" rel="stylesheet"/>
+                                <!-- CSS Just for demo purpose, don't include it in your project -->
+                                <link href="./assets/demo/demo.css" rel="stylesheet"/>
+                                <link href="assets/css/estili_willy.css" rel="stylesheet">
+                                </link>
+                            </link>
+                        </link>
                     </link>
                 </link>
             </link>
         </link>
     </head>
-    <body>
+    <body style="background-color: white !important">
         <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg">
             <div class="container">
                 <div class="navbar-translate">
@@ -52,21 +58,17 @@
                 </div>
             </div>
         </nav>
-        <div class="page-header header-filter" data-parallax="true" style="background-color: #232830e6 ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 ml-auto mr-auto">
-                        <div class="brand text-center">
-                            <h1>
-                                Sistema Académico
-                                ________________________
-                                <h3 class="title text-center">
-                                    Bienvenido
-                                </h3>
-                            </h1>
-                        </div>
-                    </div>
-                </div>
+        <div class="page-header header-filter" data-parallax="true">
+            <div style="z-index: 3 ;height: 100%;width: 100%">
+                <svg height="100%" width="100%">
+                    <polygon points="0,0  600,0 400,700  0,700" style="fill: #212529">
+                    </polygon>
+                    <image height="300" width="300" x="80" xlink:href="assets/img/insignia.png" y="220">
+                    </image>
+                    <text style="font-size: 48px ;font-family:'Roboto';  fill: #fed136" x="80" y="200">
+                        Sistema Académico
+                    </text>
+                </svg>
             </div>
         </div>
         <div class="main main-raised">
@@ -93,7 +95,7 @@
             </div>
         </div>
         <div>
-            <div class="section text-center">
+            <div class="section text-center " style="background-color: white">
                 <h2 class="title">
                     Nuestro Equipo
                 </h2>
@@ -223,53 +225,53 @@
                 </div>
             </div>
         </div>
-    </body>
-    <div class="col-md-12">
-        <footer class="footer " style="background:#062044">
-            <div class="container">
-                <nav class="float-left">
-                    <ul>
-                        <li>
-                            <a href="http://www.unprg.edu.pe/univ/" style="color: white">
-                                <i class="material-icons" style="padding: 6%">
-                                    business
-                                </i>
-                                Universidad Nacional Pedro Ruiz Gallo
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="copyright float-right" style="color: white">
-                    ©
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script>
-                    <script src="./assets/js/core/jquery.min.js" type="text/javascript">
-                    </script>
-                    <script src="./assets/js/core/popper.min.js" type="text/javascript">
-                    </script>
-                    <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript">
-                    </script>
-                    <script src="./assets/js/plugins/moment.min.js">
-                    </script>
-                    <!--  Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-                    <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript">
-                    </script>
-                    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-                    <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript">
-                    </script>
-                    <!--  Plugin for Sharrre btn -->
-                    <script src="./assets/js/plugins/jquery.sharrre.js" type="text/javascript">
-                    </script>
-                    <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-                    <script src="./assets/js/material-kit.js?v=2.0.4" type="text/javascript">
-                    </script>
-                    todos los derechos reservados, con colaboracion de
-                    <a href="https://www.creative-tim.com/" style="color:aqua" target="blank">
-                        MidoriyaCorp.
-                    </a>
+        <div class="col-md-12">
+            <footer class="footer " style="background:#062044">
+                <div class="container">
+                    <nav class="float-left">
+                        <ul>
+                            <li>
+                                <a href="http://www.unprg.edu.pe/univ/" style="color: white">
+                                    <i class="material-icons" style="padding: 6%">
+                                        business
+                                    </i>
+                                    Universidad Nacional Pedro Ruiz Gallo
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="copyright float-right" style="color: white">
+                        ©
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                        <script src="./assets/js/core/jquery.min.js" type="text/javascript">
+                        </script>
+                        <script src="./assets/js/core/popper.min.js" type="text/javascript">
+                        </script>
+                        <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript">
+                        </script>
+                        <script src="./assets/js/plugins/moment.min.js">
+                        </script>
+                        <!--  Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+                        <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript">
+                        </script>
+                        <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+                        <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript">
+                        </script>
+                        <!--  Plugin for Sharrre btn -->
+                        <script src="./assets/js/plugins/jquery.sharrre.js" type="text/javascript">
+                        </script>
+                        <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+                        <script src="./assets/js/material-kit.js?v=2.0.4" type="text/javascript">
+                        </script>
+                        todos los derechos reservados, con colaboracion de
+                        <a href="https://www.creative-tim.com/" style="color:aqua" target="blank">
+                            MidoriyaCorp.
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </footer>
-    </div>
+            </footer>
+        </div>
+    </body>
 </html>
