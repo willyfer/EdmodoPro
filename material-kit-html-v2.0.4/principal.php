@@ -10,10 +10,27 @@ $lista_sms = array('pedro' => 'hola como estas ', 'rosa' => 'hi', 'juan' => 'pag
             Edmodo Pro
         
         </title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/core/jquery.min.js"></script>
+    <script src="assets/js/plugins/moment.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/bootstrap-datetimepicker.js"></script>
+    <script src="assets/css/datetimepicker.css"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+     <link rel="stylesheet" href="assets/css/material-kit.min.css">
+    <link rel="stylesheet" href="assets/js/material-kit.js">
+
+     <link href="../assets/demo/demo.css" rel="stylesheet">
+ 
         <link href="https://fonts.googleapis.com/css?family=Cinzel|Julius+Sans+One|Nanum+Gothic|Pacifico|Shadows+Into+Light|Teko" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      
+<script>>
+$(function () {
+$("#datepicker").datetimepicker();
+});
+</script>
+
         
         <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
         </link>
@@ -132,55 +149,277 @@ $lista_sms = array('pedro' => 'hola como estas ', 'rosa' => 'hi', 'juan' => 'pag
                         </div>
                     </div>
                     <div>
-                        <label for="#"> CURSOS</label>
-                        <button class="btn btn-primary btn-block"  onclick="curso.php">
-                            curso 1
-                        </button>
-                        <button class="btn btn-primary btn-block glyphicon glyphicon-link" onclick="location.href='php/conexion.php'">
-                            curso 2
-                        </button>
-                        <button class="btn btn-primary btn-block" onclick="location.href='php/insert_post.php'">
-                            curso 3
-                        </button>
-                        <button class="btn btn-primary btn-block" onclick="location.href='curso.php'">
-                            curso 4
-                        </button>
+
+                      <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active show" href="#studio" role="tab" data-toggle="tab" aria-selected="true">
+                           <i><img src="assets/img/matematicas.jpg" class="img_medium" alt="#"> </i> Matemáticas 1
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#works" role="tab" data-toggle="tab" aria-selected="false">
+                            <i class="material-icons">palette</i> Ciencias   
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#favorite" role="tab" data-toggle="tab" aria-selected="false">
+                            <i class="material-icons"><img src="assets/img/biologia.png" class="img_medium" alt=""></i> Biología
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#favorite" role="tab" data-toggle="tab" aria-selected="false">
+                         cc Inglés 
+                          </a>
+                        </li>
+                         <li class="nav-item">
+                          <a class="nav-link" href="#favorite" role="tab" data-toggle="tab" aria-selected="false">
+                            <i ><img src="" alt=""></i> Geografía 
+                          </a>
+                        </li>
+                         <li class="nav-item">
+                          <a class="nav-link" href="#favorite" role="tab" data-toggle="tab" aria-selected="false">
+                            <i class="material-icons"><img src="assets/img/comunicacion.png" class="img_medium" alt=""></i> comunicacion 
+                          </a>
+                        </li>
+                          <li class="nav-item">
+                          <a class="nav-link" href="#favorite" role="tab" data-toggle="tab" aria-selected="false">
+                            <i class="material-icons">favorite</i> Educación  física
+                          </a>
+                        </li>
+
+                      </ul>
+            
+                       
+                    </div>
+                    <button class="btn btn-primary  " id="btn_calendario" >
+                           ver calendario
+                    </button>
+                    <div id="datepicker">
+                         
                     </div>
                 </div>
                 <div class=" col-md-7" id="container_posts" >
                      <div id="conatiner_posts_2">
-            <div id="posts">
-                <div class="row" id="head_postes" style="padding:5px ;margin:5px">
-                    <img alt="#" class="img-rounded img-circle img_small" src="assets/img/willy.jpg">
-                    </img>
-                    <a href="#" style="color: black">
-                        Willy fernandez Gastelo
-                        <span class="glyphicon glyphicon-play">
-                            <a href="#">
-                                curso I informatica
-                            </a>
-                        </span>
-                    </a>
-                </div>
-                <div class="" id="posteado">
-                    <label for="#" style="color: black ;font-size: 14px">
-                        publicacion decripcion
-                    </label>
-                    <div>
-                        <img alt="" class="img_big center-block" src="assets/img/Madoka.jpg">
-                        </img>
+                        <div id="posts">
+                           <div class="row" id="head_postes" style="padding:5px ;margin:5px">
+                                <img alt="#" class="img-rounded img-circle img_small" src="assets/img/willy.jpg">
+                                </img>
+                                <a href="#" style="color: black">
+                                    Willy fernandez Gastelo
+                                    <span class="glyphicon glyphicon-play">
+                                        <a href="#">
+                                            curso I informatica
+                                        </a>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="" id="posteado">
+                                <label for="#" style="color: black ;font-size: 14px">
+                                    publicacion descripcion
+                                </label>
+                                <div>
+                                    <img alt="" class="img_big center-block" src="assets/img/Madoka.jpg">
+                                    </img>
+                                </div>
+                            </div>
+                            <div id="options_post">
+                                <button class="btn btn-primary glyphicon glyphicon-heart">
+                                    like
+                                </button>
+                                <button class="btn btn-white glyphicon glyphicon-comment">
+                                    Comentar
+                                </button>
+                            </div>
+                        </div>
+                          <div id="posts">
+                           <div class="row" id="head_postes" style="padding:5px ;margin:5px">
+                                <img alt="#" class="img-rounded img-circle img_small" src="assets/img/willy.jpg">
+                                </img>
+                                <a href="#" style="color: black">
+                                    Willy fernandez Gastelo
+                                    <span class="glyphicon glyphicon-play">
+                                        <a href="#">
+                                            curso I informatica
+                                        </a>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="" id="posteado">
+                                <label for="#" style="color: black ;font-size: 14px">
+                                    publicacion descripcion
+                                </label>
+                                <div>
+                                    <img alt="" class="img_big center-block" src="assets/img/Madoka.jpg">
+                                    </img>
+                                </div>
+                            </div>
+                            <div id="options_post">
+                                <button class="btn btn-primary glyphicon glyphicon-heart">
+                                    like
+                                </button>
+                                <button class="btn btn-white glyphicon glyphicon-comment">
+                                    Comentar
+                                </button>
+                            </div>
+                        </div>
+                          <div id="posts">
+                           <div class="row" id="head_postes" style="padding:5px ;margin:5px">
+                                <img alt="#" class="img-rounded img-circle img_small" src="assets/img/willy.jpg">
+                                </img>
+                                <a href="#" style="color: black">
+                                    Willy fernandez Gastelo
+                                    <span class="glyphicon glyphicon-play">
+                                        <a href="#">
+                                            curso I informatica
+                                        </a>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="" id="posteado">
+                                <label for="#" style="color: black ;font-size: 14px">
+                                    publicacion descripcion
+                                </label>
+                                <div>
+                                    <img alt="" class="img_big center-block" src="assets/img/Madoka.jpg">
+                                    </img>
+                                </div>
+                            </div>
+                            <div id="options_post">
+                                <button class="btn btn-primary glyphicon glyphicon-heart">
+                                    like
+                                </button>
+                                <button class="btn btn-white glyphicon glyphicon-comment">
+                                    Comentar
+                                </button>
+                            </div>
+                        </div>
+                          <div id="posts">
+                           <div class="row" id="head_postes" style="padding:5px ;margin:5px">
+                                <img alt="#" class="img-rounded img-circle img_small" src="assets/img/willy.jpg">
+                                </img>
+                                <a href="#" style="color: black">
+                                    Willy fernandez Gastelo
+                                    <span class="glyphicon glyphicon-play">
+                                        <a href="#">
+                                            curso I informatica
+                                        </a>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="" id="posteado">
+                                <label for="#" style="color: black ;font-size: 14px">
+                                    publicacion descripcion
+                                </label>
+                                <div>
+                                    <img alt="" class="img_big center-block" src="assets/img/Madoka.jpg">
+                                    </img>
+                                </div>
+                            </div>
+                            <div id="options_post">
+                                <button class="btn btn-primary glyphicon glyphicon-heart">
+                                    like
+                                </button>
+                                <button class="btn btn-white glyphicon glyphicon-comment">
+                                    Comentar
+                                </button>
+                            </div>
+                        </div>
+                          <div id="posts">
+                           <div class="row" id="head_postes" style="padding:5px ;margin:5px">
+                                <img alt="#" class="img-rounded img-circle img_small" src="assets/img/willy.jpg">
+                                </img>
+                                <a href="#" style="color: black">
+                                    Willy fernandez Gastelo
+                                    <span class="glyphicon glyphicon-play">
+                                        <a href="#">
+                                            curso I informatica
+                                        </a>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="" id="posteado">
+                                <label for="#" style="color: black ;font-size: 14px">
+                                    publicacion descripcion
+                                </label>
+                                <div>
+                                    <img alt="" class="img_big center-block" src="assets/img/Madoka.jpg">
+                                    </img>
+                                </div>
+                            </div>
+                            <div id="options_post">
+                                <button class="btn btn-primary glyphicon glyphicon-heart">
+                                    like
+                                </button>
+                                <button class="btn btn-white glyphicon glyphicon-comment">
+                                    Comentar
+                                </button>
+                            </div>
+                        </div>
+                          <div id="posts">
+                           <div class="row" id="head_postes" style="padding:5px ;margin:5px">
+                                <img alt="#" class="img-rounded img-circle img_small" src="assets/img/willy.jpg">
+                                </img>
+                                <a href="#" style="color: black">
+                                    Willy fernandez Gastelo
+                                    <span class="glyphicon glyphicon-play">
+                                        <a href="#">
+                                            curso I informatica
+                                        </a>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="" id="posteado">
+                                <label for="#" style="color: black ;font-size: 14px">
+                                    publicacion descripcion
+                                </label>
+                                <div>
+                                    <img alt="" class="img_big center-block" src="assets/img/Madoka.jpg">
+                                    </img>
+                                </div>
+                            </div>
+                            <div id="options_post">
+                                <button class="btn btn-primary glyphicon glyphicon-heart">
+                                    like
+                                </button>
+                                <button class="btn btn-white glyphicon glyphicon-comment">
+                                    Comentar
+                                </button>
+                            </div>
+                        </div>
+                          <div id="posts">
+                           <div class="row" id="head_postes" style="padding:5px ;margin:5px">
+                                <img alt="#" class="img-rounded img-circle img_small" src="assets/img/willy.jpg">
+                                </img>
+                                <a href="#" style="color: black">
+                                    Willy fernandez Gastelo
+                                    <span class="glyphicon glyphicon-play">
+                                        <a href="#">
+                                            curso I informatica
+                                        </a>
+                                    </span>
+                                </a>
+                                        
+                            </div>
+
+                            <div class="" id="posteado">
+                                <label for="#" style="color: black ;font-size: 14px">
+                                    publicacion descripcion
+                                </label>
+                                <div>
+                                    <img alt="" class="img_big center-block" src="assets/img/Madoka.jpg">
+                                    </img>
+                                </div>
+                            </div>
+                            <div id="options_post">
+                                <button class="btn btn-primary glyphicon glyphicon-heart">
+                                    like
+                                </button>
+                                <button class="btn btn-white glyphicon glyphicon-comment">
+                                    Comentar
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div id="options_post">
-                    <button class="btn btn-primary glyphicon glyphicon-heart">
-                        like
-                    </button>
-                    <button class="btn btn-white glyphicon glyphicon-comment">
-                        Comentar
-                    </button>
-                </div>
-            </div>
-        </div>
                 </div>
             </div>
         </div>
@@ -197,6 +436,8 @@ $lista_sms = array('pedro' => 'hola como estas ', 'rosa' => 'hi', 'juan' => 'pag
          <script src="assets/js/menu.js">
         </script>
         <script src="php/motrar_sms.js">
+        </script>
+         <script src="assets/js/calendario.js">
         </script>
     </body>
 </html>

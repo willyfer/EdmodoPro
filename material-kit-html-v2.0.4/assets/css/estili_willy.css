@@ -36,7 +36,8 @@ body {
 #perfil {
     border-radius: 6px;
     margin-bottom: 10px;
-    color: white;
+    color: black;
+    background-color: white;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 #usuario {
@@ -228,10 +229,11 @@ header {
 }
 #posts {
     margin: 7px;
-    border-bottom: solid;
-    border-width: 3px;
+    padding: 5px;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;
     border-color: grey;
-    background-color: white;
 }
 #btn_buscar {
     background-color: #fed136;
@@ -353,14 +355,14 @@ header {
     margin: 20px;
     align-items: center;
     justify-content: center;
-    background-color: #707d90b3;
+    background-color: #212529;
     border-radius: 5px;
 }
 #container_posts {
-    height: 100%;
     overflow: hidden;
     margin: 20px;
     border-radius: 5px;
+    border-color: green red yellow;
     background-color: white;
 }
 #conatiner_posts_2 {
@@ -375,3 +377,14 @@ header {
     font-family: 'Oswald';
     z-index: 1;
 }
+#datepicker {
+    margin: 7px;
+    padding: 6px;
+}
+.btn_curso {
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    align-items: center;
+}
+#btn_calendario {}

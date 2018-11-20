@@ -146,18 +146,15 @@ $lista_sms = array('pedro' => 'hola como estas ', 'rosa' => 'hi', 'juan' => 'pag
                             curso 4
                         </button>
                     </div>
-                </div>
-                <div class=" col-md-7" id="container_posts" >
-                     <div id="conatiner_posts_2">
-            <div id="posts">
-                 
-              
+            </div>
+            <div class=" col-md-7"  >
+                   <h1>CURSO 1</h1>
+                   <h2>Tareas</h2>
+          
             </div>
         </div>
-                </div>
-            </div>
-        </div>
-        <footer id="footer_w">
+    </div>
+    <footer id="footer_w">
         
         <a href="http://www.unprg.edu.pe" style="color: white"><span class="glyphicon glyphicon-home" ></span> Universidad Nacional Pedro Ruiz Gallo</a>
         <p style="float: right;"> © 2018 todos los derechos reservados </p>
