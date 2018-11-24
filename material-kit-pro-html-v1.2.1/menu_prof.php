@@ -6,7 +6,7 @@
 	<link rel="icon" type="image/png" href="assets/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Sistema Academico alumno</title>
+	<title>Sistema Academico  Docente</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
@@ -23,19 +23,15 @@
 	<link href="assets/assets-for-demo/demo.css" rel="stylesheet" />
 	<link rel="stylesheet" href="assets/css/indice.css">
 </head>
-	
 <body>
-	<?php include'partes/header.php'; ?>
- 
-		<div class="row" style="margin: 16px">
-			<!-- div Cursos del alumno -->
-			<?php include 'partes/div_cursos_alumno.php'; ?>
-			<!-- div Publicaiones -->
-			<div class="col-md-5" id="publicaciones">
+	<?php include 'partes/header.php'; ?>
+	<div class="row" style="margin: 0px 16px;">
+		<?php include 'partes/div_cursos_prof.php'; ?>
+		<div class="col-md-5" id="publicaciones">
 				 
 					<div  id=" ">
-    					<div class="title" style="background-color: #4f408a ;color: white ;padding: 10px;border-radius: 5px">
-		                    <h3 >  Publicaciones</h3>
+    					<div class="title" style="">
+		                    <h3 > Mis Publicaciones</h3>
 		                </div>
 		        		<div class="row" style="padding: 0px !important">
 		        			<div >
@@ -160,27 +156,19 @@
 		        		</div>
 					 </div>
 			</div>
-			<!-- div Tareas  del alumno -->
-			<?php include 'partes/div_tareas_alumno.php'; ?>
-	 
-		
- </div>
- <!-- modal tarea-->
+		<?php include 'partes/div_tareas_prof.php'; ?>
+	</div>
+	
 	<?php include 'partes/modal_tarea_alumno.php'; ?>
 <!-- modal foto-->
 	<?php include 'partes/modal_camniar_foto.php'; ?>
  
 <!-- Modal alert confirmar cambio de foto de perfil-->	
 <?php include 'partes/modal_confirmar_foto.php'; ?>
-<!-- Footer  -->	
-
-	<?php include 'partes/footer.php'; ?>
-					
-		 
-			  
+<?php include 'partes/footer.php'; ?>
 	
 </body>
-<?php require 'partes/scripts.php'; ?>
 
- 
+<?php require 'partes/scripts.php'; ?>
+ <script src="assets/js/mostrar_tareas.js"></script>
 </html>
