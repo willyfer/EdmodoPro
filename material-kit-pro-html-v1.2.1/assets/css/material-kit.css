@@ -442,8 +442,8 @@ fieldset[disabled]
 
 .btn.btn-primary.btn-simple,
 .navbar .navbar-nav > li > a.btn.btn-primary.btn-simple {
-    background-color: transparent;
-    color: #9c27b0;
+    background-color: #00BCD4;
+    color: #eee;
     box-shadow: none;
 }
 
@@ -1363,7 +1363,7 @@ fieldset[disabled]
 .btn-group-lg
 .navbar .navbar-nav > li > a.btn {
     font-size: 14px;
-    padding: 18px 36px;
+    padding: 12px 24px;
 }
 
 .btn.btn-sm,
