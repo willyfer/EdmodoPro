@@ -5545,7 +5545,7 @@ button.close {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 400;
   pointer-events: auto;
   background-color: #ffffff;
   background-clip: padding-box;
@@ -8892,7 +8892,7 @@ button:focus {
 
 .btn.btn-primary {
   color: #fff;
-  background-color: #9c27b0;
+  background-color: #3a4ba7;
   border-color: #9c27b0;
   box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14), 0 3px 1px -2px rgba(156, 39, 176, 0.2), 0 1px 5px 0 rgba(156, 39, 176, 0.12);
 }
@@ -12005,6 +12005,7 @@ form {
   padding-right: 0;
   border-radius: 0;
   font-size: 14px;
+  margin-left: 15;
 }
 
 .form-control:focus,

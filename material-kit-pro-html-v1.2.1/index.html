@@ -15,6 +15,7 @@
                     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
                         <!-- CSS Files -->
                         <link href="./assets/css/material-kit-nuevo.css" rel="stylesheet"/>
+                        
                         <!-- CSS Just for demo purpose, don't include it in your project -->
                         <link href="./assets/demo/demo.css" rel="stylesheet"/>
                     </link>
@@ -69,7 +70,7 @@
                     <div class="col-md-10 ml-auto mr-auto">
                         <div class="brand text-center">
                             <h1>
-                                Edmodo Pro
+                                Campus Excelsis
                                 <h3 class="title text-center">
                                     Bienvenido
                                 </h3>
@@ -86,13 +87,13 @@
                         Seleccione una opción.
                     </h3>
                     <div>
-                        <button class="btn btn-primary btn-lg" href="menu.html" style="background-color: #00BCD4">
+                        <button class="btn btn-primary btn-lg" href="menu.html" style="background-color: #00BCD4" data-target="#loginModal" data-toggle="modal">
                             <i class="material-icons" style="padding: 6%">
                                 school
                             </i>
                             Alumno
                         </button>
-                        <button class="btn btn-primary btn-lg" style="background-color: #3F51B5">
+                        <button class="btn btn-primary btn-lg" style="background-color: #3F51B5" data-target="#loginModal" data-toggle="modal">
                             <i class="material-icons" style="padding: 6%">
                                 work
                             </i>
@@ -278,3 +279,59 @@
         </footer>
     </div>
 </html>
+<!-- Login Modal -->
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="loginModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-login">
+        <div class="modal-content">
+            <div class="card card-signup card-plain">
+                <div class="modal-header">
+                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">
+                        <i class="material-icons">
+                            clear
+                        </i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form" method="">
+                        <p class="description text-center">
+                            Inserte Codigo
+                        </p>
+                        <div class="card-content">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="material-icons">
+                                        face
+                                    </i>
+                                </span>
+                                <input class="form-control" placeholder="Codigo..." type="text">
+                                </input>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="material-icons">
+                                        lock_outline
+                                    </i>
+                                </span>
+                                <input class="form-control" placeholder="Password..." type="password"/>
+                            </div>
+                            <!-- If you want to add a checkbox to this form, uncomment this code
+
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" name="optionsCheckboxes" checked>
+									Subscribe to newsletter
+								</label>
+							</div> -->
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer text-center">
+                    <a class="btn btn-primary btn-simple btn-wd btn-lg" href="#pablo">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  End Modal -->
