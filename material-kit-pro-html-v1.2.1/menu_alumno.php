@@ -34,8 +34,8 @@
 			<div class="col-md-5" id="publicaciones">
 				 
 					<div  id=" ">
-    					<div class="title" style="background-color: #4f408a ;color: white ;padding: 10px;border-radius: 5px">
-		                    <h3 >  Publicaciones</h3>
+    					<div class="title">
+		                    <h3 class="h3">  Publicaciones</h3>
 		                </div>
 		        		<div class="row" style="padding: 0px !important">
 		        			<div >
@@ -48,7 +48,7 @@
 		        							</div>
 		        						</a>
 		        						<div class="media-body">
-		        							<h4 class="media-heading">Tina Andrew <small>· 7 minutes ago</small></h4>
+		        							<h4 class="media-heading h4">Tina Andrew <small>· 7 minutes ago</small></h4>
 		        							<h6 class="text-muted"></h6>
 
 		        							<p>Chance too good. God level bars. I'm so proud of @LifeOfDesiigner #1 song in the country. Panda! Don't be scared of the truth because we need to restart the human foundation in truth I stand with the most humility. We are so blessed!</p>

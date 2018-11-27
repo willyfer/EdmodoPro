@@ -5,12 +5,12 @@
 
 	<!--  Plugin for Date Time Picker and Full Calendar Plugin-->
 	<script src="assets/js/moment.min.js"></script>
-
+<!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+	<script src="assets/js/bootstrap-datetimepicker.js" type="text/javascript"></script>
 	<!--	Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
 	<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
 
-	<!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-	<script src="assets/js/bootstrap-datetimepicker.js" type="text/javascript"></script>
+	
 
 	<!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
 	<script src="assets/js/bootstrap-selectpicker.js" type="text/javascript"></script>
@@ -21,6 +21,7 @@
 	<!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
 	<script src="assets/js/jasny-bootstrap.min.js"></script>
 		<script src="assets/js/cerrar_modales.js"></script>
+		<script src="assets/js/date.js"></script>
 
 	<!-- Plugin For Google Maps -->
 	 

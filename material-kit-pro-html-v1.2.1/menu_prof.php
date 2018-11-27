@@ -27,11 +27,11 @@
 	<?php include 'partes/header.php'; ?>
 	<div class="row" style="margin: 0px 16px;">
 		<?php include 'partes/div_cursos_prof.php'; ?>
-		<div class="col-md-5" id="publicaciones">
+		<div class="col-xs-5" id="publicaciones">
 				 
 					<div  id=" ">
     					<div class="title" style="">
-		                    <h3 > Mis Publicaciones</h3>
+		                    <h3 class="h3"> Mis Publicaciones</h3>
 		                </div>
 		        		<div class="row" style="padding: 0px !important">
 		        			<div >
@@ -44,8 +44,8 @@
 		        							</div>
 		        						</a>
 		        						<div class="media-body">
-		        							<h4 class="media-heading">Tina Andrew <small>· 7 minutes ago</small></h4>
-		        							<h6 class="text-muted"></h6>
+		        							<h4 class="media-heading h4">Tina Andrew <small>· 7 minutes ago</small></h4>
+		        							<h6 class="text-muted">dd</h6>
 
 		        							<p>Chance too good. God level bars. I'm so proud of @LifeOfDesiigner #1 song in the country. Panda! Don't be scared of the truth because we need to restart the human foundation in truth I stand with the most humility. We are so blessed!</p>
 		        							<p>All praises and blessings to the families of people who never gave up on dreams. Don't forget, You're Awesome!</p>
@@ -162,6 +162,8 @@
 	<?php include 'partes/modal_tarea_alumno.php'; ?>
 <!-- modal foto-->
 	<?php include 'partes/modal_camniar_foto.php'; ?>
+	<?php 	include 'partes/nueva_tarea.php'; ?>
+	<?php 	include 'partes/revisar_tarea.php'; ?>
  
 <!-- Modal alert confirmar cambio de foto de perfil-->	
 <?php include 'partes/modal_confirmar_foto.php'; ?>

@@ -1,4 +1,4 @@
-		<div class="col-md-3" style="background-color:  #4f408a;border-radius: 5px" >
+		<div class="col-md-3 borde_w "  >
 				<h3 style="color: white; text-align: center">Tareas Programadas</h3>
 				
 				<div style="text-align: center;" id="tareas_docente">

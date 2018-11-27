@@ -1,4 +1,4 @@
-		<div class="col-md-3" style="background-color:  #4f408a;border-radius: 5px">
+		<div class="col-md-3 borde_w">
 				<h3 style="color: white">Tareas</h3>
 			 
 				 	 <table class="table table-responsive">

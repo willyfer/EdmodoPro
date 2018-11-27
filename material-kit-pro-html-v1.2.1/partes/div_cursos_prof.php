@@ -1,4 +1,4 @@
-	<div class="col-md-3" style="background-color:#4f408a ;border-radius: 6px;" id="Cursos">
+	<div class="col-md-3  borde_w" id="Cursos">
 				 <div>	  <table class="table" style="color: white">
                                             <thead>
                                                 <tr>
@@ -14,7 +14,8 @@
                                             <tbody style="color: white">
                                                 <tr>
                                                     <td class="text-center">
-                                                        1
+                                                       <img src="assets/img/Cursos/calculadora.png" alt="">
+                                                    </td>
                                                     </td>
                                                     <td>
                                                       <a href="#"  style="color: white;width: 10px;" id="mate">Matematica</a>
@@ -27,8 +28,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">
-                                                        2
-                                                    </td>
+                                                         <img src="assets/img/Cursos/comunicacion.png" alt="">                                                    </td>
                                                     <td>
                                                         <a href="#" style="color: white" id="comunicacion">Comunicacion</a>
                                                     </td>
@@ -39,7 +39,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">
-                                                        3
+                                                        <img src="assets/img/Cursos/fisica.png" alt="">
                                                     </td>
                                                     <td>
                                                       <a href="#" style="color: white" id="fisica">Fisica</a> 
@@ -50,7 +50,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">
-                                                        4
+                                                       <img src="assets/img/Cursos/historia.png" alt="">
                                                     </td>
                                                     <td >
                                                        <a href="#" style="color: white" id="historia">Historia</a>
@@ -62,8 +62,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td class="text-center">
-                                                        5
-                                                    </td>
+                                                          <img src="assets/img/Cursos/biologia.png" alt="">                                                   </td>
                                                     <td>
                                                       <a href="#" style="color: white" id="biologia">Biologia</a>
                                                     </td>

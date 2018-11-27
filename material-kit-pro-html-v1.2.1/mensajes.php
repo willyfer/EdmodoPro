@@ -23,8 +23,8 @@
             <?php include 'partes/header.php'; ?>
             <div style="height: 87%" class="row">
                 
-                <div id="contactos" style="margin: 15px" class="col-md-3">
-                    <h4>Mensajes</h4>
+                <div id="contactos" style="margin: 15px" class="col-md-3 blanco">
+                    <h4 class="h4">Mensajes</h4>
                     <ul class="nav" style="margin: 10px">
                         <li><div  style="margin-bottom: 10px">  
                              <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">Pedro Ramirez</a>

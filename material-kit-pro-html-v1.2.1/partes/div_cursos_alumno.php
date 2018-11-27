@@ -1,4 +1,4 @@
-	<div class="col-md-3" style="background-color:#4f408a ;border-radius: 6px;" id="Cursos">
+	<div class="col-md-3 borde_w" style="" id="Cursos">
 				 <div>	  <table class="table" style="color: white">
                                             <thead>
                                                 <tr>
@@ -14,7 +14,7 @@
                                             <tbody style="color: white">
                                                 <tr>
                                                     <td class="text-center">
-                                                        1
+                                                        <img src="assets/img/Cursos/calculadora.png" alt="">
                                                     </td>
                                                     <td>
                                                       <a href=""  style="color: white"> Matematica</a>
