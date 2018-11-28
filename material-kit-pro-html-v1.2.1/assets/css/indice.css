@@ -136,6 +136,8 @@
      border-width: 1px;
      border-style: solid;
      z-index: 3;
+     background-color: #23292f;
+     height: 100%;
  }
  .tittle {
      color: white !important;
@@ -146,15 +148,28 @@
  .h4 {
      color: white !important;
  }
- .blanco ul li a {
+ .blanco tr td a {
      color: white;
  }
- .blanco ul li a:hover {
+ .blanco tr td a:hover {
      color: yellow;
  }
- .negro_trans {}
+ .negro_trans {
+     opacity: 0.4;
+ }
  .negro {
      background-color: black;
      color: white;
+     z-index: 5;
      opacity: 1!important;
+ }
+ #publicaciones {
+     background-color: #23292f;
+ }
+ .transicio_w {}
+ .card-background::after, .back-background::after, .front-background::after {
+     background-color: rgba(0, 0, 0, 0);
+ }
+ .rotating-card-container .card .back.back-background::after {
+     background-color: rgba(0, 0, 0, 0);
  }

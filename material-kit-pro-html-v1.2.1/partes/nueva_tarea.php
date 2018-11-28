@@ -48,7 +48,7 @@
     
         <div class="modal-footer text-center">
             
-            <button class="btn btn-success">enviar</button>
+            <button class="btn btn-success">Crear Tarea</button>
         
       </div>
        </div>

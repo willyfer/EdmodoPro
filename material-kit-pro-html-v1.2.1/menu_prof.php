@@ -27,7 +27,7 @@
 	<?php include 'partes/header.php'; ?>
 	<div class="row" style="margin: 0px 16px;">
 		<?php include 'partes/div_cursos_prof.php'; ?>
-		<div class="col-xs-5" id="publicaciones">
+		<div class="col-md-5" id="publicaciones">
 				 
 					<div  id=" ">
     					<div class="title" style="">
@@ -45,7 +45,7 @@
 		        						</a>
 		        						<div class="media-body">
 		        							<h4 class="media-heading h4">Tina Andrew <small>· 7 minutes ago</small></h4>
-		        							<h6 class="text-muted">dd</h6>
+		        							<h6 class="text-muted">publicado el 23/34/19</h6>
 
 		        							<p>Chance too good. God level bars. I'm so proud of @LifeOfDesiigner #1 song in the country. Panda! Don't be scared of the truth because we need to restart the human foundation in truth I stand with the most humility. We are so blessed!</p>
 		        							<p>All praises and blessings to the families of people who never gave up on dreams. Don't forget, You're Awesome!</p>

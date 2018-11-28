@@ -1,6 +1,6 @@
- <div class="modal fade" id="noticeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-notice">
-    <div class="modal-content">
+ <div class="modal fade negro_trans" id="noticeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-notice ">
+    <div class="modal-content  negro" >
       <div class="modal-header">
         <button type="button " class="close btn_cerrar" data-dismiss="modal" aria-hidden="true"><i class="material-icons">clear</i></button>
         <h5 class="modal-title" id="myModalLabel">Matematica </h5><br>
@@ -15,10 +15,10 @@
         </div>
 
       </div>
-      <div class="modal-body">
+      <div class="modal-body  ">
       	<h4>Titulo de la Tarea</h4>
         <div class="instruction">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eaque eum omnis atque illo alias commodi sint ipsa odit corporis vero quasi dignissimos veritatis accusantium ratione, adipisci dicta tenetur esse!</p>
+            <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eaque eum omnis atque illo alias commodi sint ipsa odit corporis vero quasi dignissimos veritatis accusantium ratione, adipisci dicta tenetur esse!</p>
         </div>
         <label for=""  style="color: #61589e">Fecha límite de entrega</label>
         <label for="" style="color: #61589e">12/12/2018</label><br>
