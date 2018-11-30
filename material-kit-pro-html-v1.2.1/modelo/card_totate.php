@@ -1,11 +1,11 @@
 <div class="rotating-card-container">
     <div class="card card-rotate card-background">
-        <div class="front front-background" style="background-image:url('assets/img/fondo_notas.jpg');">
+        <div class="front front-background" style="background-image:url('assets/img/notas.png');">
             <div class="card-body">
               
                 <a href="#pablo">
-                    <h3 class="card-title">Notas</h3>
-                </a>
+                    
+                </a>    
                 
             </div>
         </div>
@@ -15,7 +15,7 @@
                 <h5 class="card-title">
                     Notas 
                 </h5>
-                <p class="card-description">As an Admin, you have shortcuts to edit, view or delete the posts.</p>
+               
                 <div class="footer text-center">
                     <a href="#pablo" class="btn btn-info btn-just-icon btn-fill btn-round">
                         <i class="material-icons">subject</i>

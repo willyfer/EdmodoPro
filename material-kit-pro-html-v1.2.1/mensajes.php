@@ -21,105 +21,115 @@
         </link>
         <body>
             <?php include 'partes/header.php'; ?>
-            <div style="height: 87%" class="row">
+            <div   class="row " style="margin:0px 16px">
                 
-                <div id="contactos" style="margin: 15px" class="col-md-3 blanco">
+                <div id="contactos"   class="col-md-3 blanco  borde_w">
                     <h4 class="h4">Mensajes</h4>
-                    <ul class="nav" style="margin: 10px">
-                        <li><div  style="margin-bottom: 10px">  
+                    <ul class="nav"  >
+                        <li><div  >  
                              <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">Pedro Ramirez</a>
                              </div>
                         </li>
-                      <li><div style="margin-bottom: 10px">  
+                      <li><div>  
                              <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">juan Ramirez</a>
                              </div>
                         </li>
-                         <li><div style="margin-bottom: 10px">  
+                         <li><div>  
                              <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">maria Ramirez</a>
                              </div>
                         </li>
-                         <li><div style="margin-bottom: 10px">  
+                         <li><div>  
                              <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">jose Ramirez</a>
                              </div>
                         </li>
-                         <li><div style="margin-bottom: 10px">  
+                         <li><div>  
                              <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">paty Ramirez</a>
-                             </div style="margin-bottom: 10px">
+                             </div>
                         </li>
-                         <li><div style="margin-bottom: 10px">  
+                         <li><div>  
                              <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">lorena Ramirez</a>
                              </div>
                         </li>
                     </ul>
                     
                 </div>
-                <div  class="col-md-7">
+                <div  class="col-md-7 borde_w blanco">
                     <div id="sms"  onscroll="true" style="overflow-y: scroll;height: 330px ">
                           <ul class="nav" style="margin: 10px">
                             <li><div  style="margin-bottom: 10px;float: right;">  
                                  <a href="" >Pedro Ramirez</a>
                                  <img src="assets/img/faces/christian.jpg" class="img-circle img-rounded img_peque" alt="">
                                  </div><br><br>
-                                 <p style="background-color: skyblue ; border-radius:5px; padding:4px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor cupiditate fugiat aspernatur nisi, itaque! Maiores ipsam expedita, omnis vero labore aut minima illum quo amet provident rem beatae, adipisci.</p>
+                                 <p class="sms_conversacion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor cupiditate fugiat aspernatur nisi, itaque! Maiores ipsam expedita, omnis vero labore aut minima illum quo amet provident rem beatae, adipisci.</p>
                             </li>
                          
                              <li  ><div style="margin-bottom: 10px">  
                                  <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">maria Ramirez</a>
                                  </div>
-                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor cupiditate fugiat aspernatur nisi, itaque! Maiores ipsam expedita, omnis vero labore aut minima illum quo amet provident rem beatae, adipisci.</p>
+                                     <p class="sms_conversacion_yo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor cupiditate fugiat aspernatur nisi, itaque! Maiores ipsam expedita, omnis vero labore aut minima illum quo amet provident rem beatae, adipisci.</p>
                             </li>
-                            <li><div  style="margin-bottom: 10px;float: right;">  
+                           <li><div  style="margin-bottom: 10px;float: right;">  
                                  <a href="" >Pedro Ramirez</a>
                                  <img src="assets/img/faces/christian.jpg" class="img-circle img-rounded img_peque" alt="">
                                  </div><br><br>
-                                 <p style="background-color: skyblue ; border-radius:5px; padding:4px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor cupiditate fugiat aspernatur nisi, itaque! Maiores ipsam expedita, omnis vero labore aut minima illum quo amet provident rem beatae, adipisci.</p>
+                                 <p class="sms_conversacion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor cupiditate fugiat aspernatur nisi, itaque! Maiores ipsam expedita, omnis vero labore aut minima illum quo amet provident rem beatae, adipisci.</p>
                             </li>
+                         
                              <li  ><div style="margin-bottom: 10px">  
                                  <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">maria Ramirez</a>
                                  </div>
-                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor cupiditate fugiat aspernatur nisi, itaque! Maiores ipsam expedita, omnis vero labore aut minima illum quo amet provident rem beatae, adipisci.</p>
+                                     <p class="sms_conversacion_yo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor cupiditate fugiat aspernatur nisi, itaque! Maiores ipsam expedita, omnis vero labore aut minima illum quo amet provident rem beatae, adipisci.</p>
                             </li>
-                               <li><div  style="margin-bottom: 10px;float: right;">  
+                             <li><div  style="margin-bottom: 10px;float: right;">  
                                  <a href="" >Pedro Ramirez</a>
                                  <img src="assets/img/faces/christian.jpg" class="img-circle img-rounded img_peque" alt="">
                                  </div><br><br>
-                                 <p style="background-color: skyblue ; border-radius:5px; padding:4px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor cupiditate fugiat aspernatur nisi, itaque! Maiores ipsam expedita, omnis vero labore aut minima illum quo amet provident rem beatae, adipisci.</p>
+                                 <p class="sms_conversacion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor cupiditate fugiat aspernatur nisi, itaque! Maiores ipsam expedita, omnis vero labore aut minima illum quo amet provident rem beatae, adipisci.</p>
                             </li>
+                         
                              <li  ><div style="margin-bottom: 10px">  
                                  <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">maria Ramirez</a>
                                  </div>
-                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor cupiditate fugiat aspernatur nisi, itaque! Maiores ipsam expedita, omnis vero labore aut minima illum quo amet provident rem beatae, adipisci.</p>
+                                     <p class="sms_conversacion_yo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor cupiditate fugiat aspernatur nisi, itaque! Maiores ipsam expedita, omnis vero labore aut minima illum quo amet provident rem beatae, adipisci.</p>
                             </li>
-                               <li><div  style="margin-bottom: 10px;float: right;">  
+                             <li><div  style="margin-bottom: 10px;float: right;">  
                                  <a href="" >Pedro Ramirez</a>
                                  <img src="assets/img/faces/christian.jpg" class="img-circle img-rounded img_peque" alt="">
                                  </div><br><br>
-                                 <p style="background-color: skyblue ; border-radius:5px; padding:4px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor cupiditate fugiat aspernatur nisi, itaque! Maiores ipsam expedita, omnis vero labore aut minima illum quo amet provident rem beatae, adipisci.</p>
+                                 <p class="sms_conversacion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor cupiditate fugiat aspernatur nisi, itaque! Maiores ipsam expedita, omnis vero labore aut minima illum quo amet provident rem beatae, adipisci.</p>
                             </li>
-                          
+                         
+                             <li  ><div style="margin-bottom: 10px">  
+                                 <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">maria Ramirez</a>
+                                 </div>
+                                     <p class="sms_conversacion_yo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor cupiditate fugiat aspernatur nisi, itaque! Maiores ipsam expedita, omnis vero labore aut minima illum quo amet provident rem beatae, adipisci.</p>
+                            </li>
                          </ul>
 
                     </div>
                     <div id="footer_sms">
                         <div>
-                            <button class="btn btn-sm btn-warning">fot0</button>
-                            <button class="btn btn-sm btn-rose">archivo</button>
-                            <button class="btn btn-sm btn-danger"></button></div>
-                        <div>
-                            <textarea name="" id="" cols="100%" rows="5"></textarea>
-                            <button class="btn btn-sm btn-success">send</button>                    
+                            <button class="btn btn-xs btn-warning"><span class="material-icons">insert_drive_file</span></button>
+                            <button class="btn btn-xs btn-rose"><span class="material-icons">insert_photos</span></button>
+                           
+                        <div style="text-align: center;">
+                            <textarea name="" id="" cols="50%" rows="1" placeholder="Escribir" style="border-radius: 4px"></textarea>
+                            <button class="btn btn-sm btn-success" style="align-items: center;"><span class="material-icons">send</span></button>                    
                         </div>
                     </div>
                     
                 </div>
+                </div>
             </div>
+             
+        </body>
 
     <?php include 'partes/modal_tarea_alumno.php'; ?>
             <!-- modal foto-->
     <?php include 'partes/modal_camniar_foto.php'; ?>
     <?php include 'partes/modal_confirmar_foto.php'; ?>
     <?php include 'partes/footer.php'; ?>
-        </body>
+       
     <?php require 'partes/scripts.php'; ?>
  
 </html>

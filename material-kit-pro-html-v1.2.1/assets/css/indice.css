@@ -154,6 +154,13 @@
  .blanco tr td a:hover {
      color: yellow;
  }
+ .blanco ul li a {
+     margin-left: 10px;
+     color: white;
+ }
+ .blanco ul li a:hover {
+     color: yellow;
+ }
  .negro_trans {
      opacity: 0.4;
  }
@@ -172,4 +179,30 @@
  }
  .rotating-card-container .card .back.back-background::after {
      background-color: rgba(0, 0, 0, 0);
+ }
+ .borde {
+     margin: 5px 6px;
+     background-color: #23292f;
+     padding: 9px;
+ }
+ .sms_conversacion {
+     background-color: #3f213f;
+     border-radius: 15px 0px 15px 15px;
+     padding: 10px;
+ }
+ .sms_conversacion_yo {
+     background-color: #4d6d89cc;
+     border-radius: 0px 15px 15px 15px;
+     padding: 10px
+ }
+ .modal-dialog {
+     width: 350px;
+ }
+ .border_input {
+     width: 100%;
+     border-radius: 5px !important;
+     padding: 6px !important;
+     border-color: #e91e63 !important;
+     border-style: solid !important;
+     border-width: 1px !important;
  }

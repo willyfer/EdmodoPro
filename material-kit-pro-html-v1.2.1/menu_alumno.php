@@ -73,7 +73,7 @@
 		        										<div class="form-group is-empty row " style="display: flex;">
 		        											<textarea class="form-control "  placeholder="Comentar algo..." rows="1"></textarea>
 		        											<a href="#pablo" class="btn  btn-rose btn-xs pull-right">
-		        												<i class="material-icons">reply</i> Reply
+		        												<i class="material-icons">reply</i> Comentar
 		        													 
 		        											</a>
 		        											<span class="material-input"></span>
@@ -97,12 +97,12 @@
 		        						 <p> Don't forget, You're Awesome!</p>
 
 		        						<div class="media-footer">
-		        							<a href="#pablo" class="btn btn-primary btn-simple pull-right" rel="tooltip" title="" data-original-title="Reply to Comment">
-		        								<i class="material-icons">reply</i> Comentar
-		        							</a>
-		        							<a href="#pablo" class="btn btn-default btn-simple pull-right">
-		        								<i class="material-icons">Like</i> 25
-		        							</a>
+		        							<a href="#pablo" class="btn   btn-simple  pull-right" rel="tooltip" title="" data-original-title="Reply to Comment">
+		        										<i class="material-icons">reply</i> Comentar
+		        									</a>
+		        									<a href="#pablo" class="btn btn-danger btn-simple pull-right">
+		        										<i class="material-icons">favorite</i> 243
+		        									</a>
 		        						 </div>
 		        						 <div class="media">
 		        							  <a class="pull-left" href="#pablo">
@@ -117,12 +117,12 @@
 		        									<p> Don't forget, You're Awesome!</p>
 
 		        									<div class="media-footer">
-		        										<a href="#pablo" class="btn btn-primary btn-simple pull-right" rel="tooltip" title="" data-original-title="Reply to Comment">
-		        											<i class="material-icons">reply</i> Reply
-		        										</a>
-		        										<a href="#pablo" class="btn btn-danger btn-simple pull-right">
-		        											<i class="material-icons">favorite</i> 243
-		        										</a>
+		        										<a href="#pablo" class="btn   btn-simple  pull-right" rel="tooltip" title="" data-original-title="Reply to Comment">
+		        										<i class="material-icons">reply</i> Comentar
+		        									</a>
+		        									<a href="#pablo" class="btn btn-danger btn-simple pull-right">
+		        										<i class="material-icons">favorite</i> 243
+		        									</a>
 		        									</div>
 		        							  </div>
 		        						  </div>
@@ -142,8 +142,8 @@
 		        								<p> Don't forget, You're Awesome!</p>
 
 		        								<div class="media-footer">
-		        									<a href="#pablo" class="btn btn-primary btn-simple pull-right" rel="tooltip" title="" data-original-title="Reply to Comment">
-		        										<i class="material-icons">comentar</i> Reply
+		        									<a href="#pablo" class="btn   btn-simple  pull-right" rel="tooltip" title="" data-original-title="Reply to Comment">
+		        										<i class="material-icons">reply</i> Comentar
 		        									</a>
 		        									<a href="#pablo" class="btn btn-danger btn-simple pull-right">
 		        										<i class="material-icons">favorite</i> 243
