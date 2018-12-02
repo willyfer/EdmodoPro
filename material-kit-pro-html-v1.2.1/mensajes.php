@@ -23,37 +23,44 @@
             <?php include 'partes/header.php'; ?>
             <div  id="div_body" class="row " style="margin:0px 16px;height: 87%">
                 
-                <div id="contactos"   class="col-md-2 blanco  borde_costado" style="height: 100%">
+                <div id="contactos"   class="col-md-3 blanco  borde_costado" style="height: 100%">
                     <h4 class="h4">Mensajes</h4>
                     <ul class="nav"  >
                         <li><div  >  
-                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">Pedro Ramirez</a>
+                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">Pedro Ramirez</a>  <span class=" badge navbar-right">5</span>
                              </div>
+                           
+
+
                         </li>
                       <li><div>  
-                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">juan Ramirez</a>
+                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">juan Ramirez</a>  <span class=" badge navbar-right">5</span>
+                             </div>
+                           
+                        </li>
+                         <li><div>  
+                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">maria Ramirez</a><span class=" badge navbar-right">5</span>
+                             </div>
+                             
+                        </li>
+                         <li><div>  
+                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">jose Ramirez</a>  <span class=" badge navbar-right">5</span>
                              </div>
                         </li>
                          <li><div>  
-                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">maria Ramirez</a>
+                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">paty Ramirez</a>  <span class=" badge navbar-right">5</span>
                              </div>
+                           
                         </li>
                          <li><div>  
-                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">jose Ramirez</a>
+                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">lorena Ramirez</a>  <span class=" badge navbar-right">5</span>
                              </div>
-                        </li>
-                         <li><div>  
-                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">paty Ramirez</a>
-                             </div>
-                        </li>
-                         <li><div>  
-                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">lorena Ramirez</a>
-                             </div>
+                             
                         </li>
                     </ul>
                     
                 </div>
-                <div id="sms_1" class="col-md-10   blanco"  style="height: 100%">
+                <div id="sms_1" class="col-md-9   blanco"  style="height: 100%">
                     <div id="sms" onscroll="false" style="height: 88%;overflow: hidden;  " class="borde_azul">
                         <div  onscroll="true"  style="overflow-y: scroll;height: 100% ; width: calc(100% + 24px);" >
                             

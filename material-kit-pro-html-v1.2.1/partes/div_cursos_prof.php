@@ -75,7 +75,7 @@
                       </table>
 				 </div>
 				 <div class="borde_w" style="margin-top: 9px" >
-				  <?php include 'modelo/card_totate.php'; ?>
+				  <?php include 'modelo/noticias.php'; ?>
             
 				 </div>
  

@@ -11,3 +11,4 @@ $('.datetimepicker').datetimepicker({
         close: 'fa fa-remove'
     }
 });
+$('.carousel').carousel();

@@ -22,6 +22,7 @@
 	<link href="assets/assets-for-demo/vertical-nav.css" rel="stylesheet" />
 	<link href="assets/assets-for-demo/demo.css" rel="stylesheet" />
 	<link rel="stylesheet" href="assets/css/indice.css">
+	<link rel="stylesheet" href="assets/demo/demo.css">
 </head>
 <body>
 	<?php include 'partes/header.php'; ?>
