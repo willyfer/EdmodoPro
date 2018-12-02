@@ -1,5 +1,8 @@
 $(document).ready(function() {
     $("#mate").click(function() {
+        $("#tareas_titulo").css({
+            "color": "green"
+        });
         $("div#tareas_docente").load('modelo/cargar_tareas.php');
     });
     $("#comunicacion").click(function() {

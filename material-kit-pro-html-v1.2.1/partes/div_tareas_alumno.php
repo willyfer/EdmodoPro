@@ -1,5 +1,5 @@
 		<div class="col-md-3 borde_w">
-				<h3 style="color: white">Tareas</h3>
+				<h3  id="tareas_titulo">Tareas</h3>
 			 	<div style="text-align: center;" id="tareas_docente">
 					<div id="tarea_vacia">
 						<br>	

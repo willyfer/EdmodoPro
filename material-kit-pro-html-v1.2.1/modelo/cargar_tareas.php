@@ -1,60 +1,67 @@
+ 
+<div>
+	
+
+
  <table class="table"> 
 	<thead>
 		<tr>
-			<th style="color: white"> Matematica</th>
-			<th><button class="btn btn-rose btn-xs"  data-target="#nuevatarea" data-toggle="modal"> <i class="material-icons">add</i>Crear Tarea</button></th>
+			<th > Matematica</th>
+			<th><a class="btn btn-rose btn-xs"  data-target="#nuevatarea" data-toggle="modal"> <i class="material-icons">add</i>Crear Tarea</a></th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td style="color: white">Trabajo Grupal  </td> 
+			<td >Trabajo Grupal  </td> 
 			<td>  
-				<button class="btn btn-warning btn-xs"  data-target="#revisartarea" data-toggle="modal">
-					<i class="material-icons">
+				<a class="btn btn-warning btn-xs"    id="btn_tarea1" href="#" >
+						<i class="material-icons">
 						info
 						</i>Revisar
-				</button>
+				</a>
 			</td>
 		</tr>
 		<tr>
-			<td style="color: white">Practica I  </td> 
+			<td >Practica I  </td> 
 			<td>  
-				<button class="btn btn-warning btn-xs"  data-target="#revisartarea" data-toggle="modal">
+				<a class="btn btn-warning btn-xs"  id="btn_tarea2" href="#">
 					<i class="material-icons">
 						info
 						</i>Revisar
-				</button>
+				</a>
 			</td>
 		</tr>
 		<tr>
-			<td style="color: white">Articulos   </td> 
+			<td >Articulos   </td> 
 			<td>  
-				<button class="btn btn-warning btn-xs"  data-target="#revisartarea" data-toggle="modal">
+				<a class="btn btn-warning btn-xs"  id="btn_tarea3" href="#">
 					<i class="material-icons">
 						info
 						</i>Revisar
-				</button>
+				</a>
 			</td>
 		</tr>
 		<tr>
-			<td style="color: white">Primer parcial  </td> 
+			<td >Primer parcial  </td> 
 			<td>  
-				<button class="btn btn-warning btn-xs"  data-target="#revisartarea" data-toggle="modal">
+				<a class="btn btn-warning btn-xs"  id="btn_tarea4" href="#">
 					<i class="material-icons">
 						info
 						</i>Revisar
-				</button>
+				</a>
 			</td>
 		</tr>
 		<tr>
-			<td style="color: white">Asunto  </td> 
+			<td >Asunto  </td> 
 			<td>  
-				<button class="btn btn-warning btn-xs"  data-target="#revisartarea" data-toggle="modal">
+				<a class="btn btn-warning btn-xs"  id="btn_tarea5" href="#">
 					<i class="material-icons">
 						info
 						</i>Revisar
-				</button>
+				</a>
 			</td>
 		</tr>
 	</tbody>
   </table>
+    <script src="assets/js/cargar_tarea_revisar.js"></script>
+  </div>

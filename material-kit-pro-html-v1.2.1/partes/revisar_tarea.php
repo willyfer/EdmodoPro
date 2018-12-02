@@ -21,32 +21,32 @@
             <tr>
               <td>Martines Oliva</td>
               <td><a href="" class="btn btn-xs">file</a></td>
-              <td><a href="#" class="btn btn-rose btn-xs">calificar</a></td>
+              <td><input type="text" class="input_calificar"></td>
             </tr>
              <tr>
               <td>Pedro fernandez</td>
               <td><a href="" class="btn btn-xs">file</a></td>
-              <td><a href="#" class="btn btn-rose btn-xs">calificar</a></td>
+              <td><input type="text" class="input_calificar"></td>
             </tr>
              <tr>
               <td>Maria Castillo</td>
               <td><a href="" class="btn btn-xs">file</a></td>
-              <td><a href="#" class="btn btn-rose btn-xs">calificar</a></td>
+              <td><input type="text" class="input_calificar"></td>
             </tr>
              <tr>
               <td>Claudia Hernandez</td>
               <td><a href="" class="btn btn-xs">file</a></td>
-              <td><a href="#" class="btn btn-rose btn-xs">calificar</a></td>
+              <td><input type="text" class="input_calificar"></td>
             </tr>
              <tr>
               <td>Martin Gallegos</td>
               <td><a href="" class="btn btn-xs">file</a></td>
-              <td><a href="#" class="btn btn-rose btn-xs">calificar</a></td>
+              <td><input type="" name="" class="input_calificar"></td>
             </tr>
              <tr>
               <td>Estefany Peres</td>
               <td><a href="" class="btn btn-xs">file</a></td>
-              <td><a href="#" class="btn btn-rose btn-xs">calificar</a></td>
+              <td><input type="" name="" class="input_calificar"></td>
             </tr>
 
           </tbody>

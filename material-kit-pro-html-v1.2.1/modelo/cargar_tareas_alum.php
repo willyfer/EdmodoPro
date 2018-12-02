@@ -12,12 +12,12 @@
 				 	 			</td>
 				 	 			<td>
 
-                                <button class="btn  btn-xs btn-round btn-warning " data-target="#noticeModal" data-toggle="modal">
+                                <a class="   btn-xs btn-round btn-warning " id="btn_tarea1">
                                     <i class="material-icons">
                                         info_outline
                                     </i>
                                     Detalles
-                               </button>
+                               </a>
                             
                                 </td>
 				 	 		</tr>
@@ -26,12 +26,12 @@
 				 	 			</td>
 				 	 			<td>
 
-                                <button class="btn  btn-xs btn-round btn-warning " data-target="#noticeModal" data-toggle="modal">
+                                <a class="btn  btn-xs btn-round btn-warning " data-target="#noticeModal" data-toggle="modal">
                                     <i class="material-icons">
                                         info_outline
                                     </i>
                                     Detalles
-                               </button>
+                               </a>
                             
                                 </td>
 				 	 		</tr>
@@ -40,12 +40,12 @@
 				 	 			</td>
 				 	 			<td>
 
-                                <button class="btn  btn-xs btn-round btn-warning " data-target="#noticeModal" data-toggle="modal">
+                                <a class="btn  btn-xs btn-round btn-warning " data-target="#noticeModal" data-toggle="modal">
                                     <i class="material-icons">
                                         info_outline
                                     </i>
                                     Detalles
-                               </button>
+                               </a>
                             
                                 </td>
 				 	 		</tr>
@@ -54,12 +54,12 @@
 				 	 			</td>
 				 	 			<td>
 
-                                <button class="btn  btn-xs btn-round btn-warning " data-target="#noticeModal" data-toggle="modal">
+                                <a class="btn  btn-xs btn-round btn-warning " data-target="#noticeModal" data-toggle="modal">
                                     <i class="material-icons">
                                         info_outline
                                     </i>
                                     Detalles
-                               </button>
+                               </a>
                             
                                 </td>
 				 	 		</tr>
@@ -68,12 +68,12 @@
 				 	 			</td>
 				 	 			<td>
 
-                                <button class="btn  btn-xs btn-round btn-warning " data-target="#noticeModal" data-toggle="modal">
+                                <a class="btn  btn-xs btn-round btn-warning " data-target="#noticeModal" data-toggle="modal">
                                     <i class="material-icons">
                                         info_outline
                                     </i>
                                     Detalles
-                               </button>
+                               </a>
                             
                                 </td>
 				 	 		</tr>

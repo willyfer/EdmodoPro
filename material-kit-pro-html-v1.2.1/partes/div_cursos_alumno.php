@@ -1,7 +1,7 @@
 	<div class="col-md-3  borde_w" style="" id="Cursos">
         <div>
             
-             <div>    <table class="table   " style="color: white">
+             <div>    <table class="table   "  >
                                                         <thead>
                                                             <tr>
                                                                 <th class="text-center " scope="col">

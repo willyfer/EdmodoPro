@@ -21,9 +21,9 @@
         </link>
         <body>
             <?php include 'partes/header.php'; ?>
-            <div   class="row " style="margin:0px 16px">
+            <div  id="div_body" class="row " style="margin:0px 16px;height: 87%">
                 
-                <div id="contactos"   class="col-md-3 blanco  borde_w">
+                <div id="contactos"   class="col-md-2 blanco  borde_costado" style="height: 100%">
                     <h4 class="h4">Mensajes</h4>
                     <ul class="nav"  >
                         <li><div  >  
@@ -53,14 +53,18 @@
                     </ul>
                     
                 </div>
-                <div  class="col-md-7 borde_w blanco">
-                    <div id="sms"  onscroll="true" style="overflow-y: scroll;height: 330px ">
+                <div id="sms_1" class="col-md-10   blanco"  style="height: 100%">
+                    <div id="sms" onscroll="false" style="height: 88%;overflow: hidden;  " class="borde_azul">
+                        <div  onscroll="true"  style="overflow-y: scroll;height: 100% ; width: calc(100% + 24px);" >
+                            
                           <ul class="nav" style="margin: 10px">
                             <li><div  style="margin-bottom: 10px;float: right;">  
-                                 <a href="" >Pedro Ramirez</a>
-                                 <img src="assets/img/faces/christian.jpg" class="img-circle img-rounded img_peque" alt="">
-                                 </div><br><br>
-                                 <p class="sms_conversacion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor cupiditate fugiat aspernatur nisi, itaque! Maiores ipsam expedita, omnis vero labore aut minima illum quo amet provident rem beatae, adipisci.</p>
+                                
+                                 <img src="assets/img/faces/christian.jpg" class="img-circle img-rounded img_peque" alt=""><br><br>
+                                
+                                 </div> 
+                                   <p class="sms_conversacion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor cupiditate fugiat  </p>
+                                
                             </li>
                          
                              <li  ><div style="margin-bottom: 10px">  
@@ -106,29 +110,40 @@
                             </li>
                          </ul>
 
-                    </div>
-                    <div id="footer_sms">
-                        <div>
-                            <button class="btn btn-xs btn-warning"><span class="material-icons">insert_drive_file</span></button>
-                            <button class="btn btn-xs btn-rose"><span class="material-icons">insert_photos</span></button>
-                           
-                        <div style="text-align: center;">
-                            <textarea name="" id="" cols="50%" rows="1" placeholder="Escribir" style="border-radius: 4px"></textarea>
-                            <button class="btn btn-sm btn-success" style="align-items: center;"><span class="material-icons">send</span></button>                    
                         </div>
+                      
+
                     </div>
+                    <div id="  " class=" " style="margin-top: 4px">
+                        <div class="row"> 
+                           
+                            <div style="text-align: center;" class="col-md-8">
+                                <textarea name="" id="" cols="50%" rows="1" placeholder="Escribir" style="border-radius: 4px" class="border_input"></textarea>
+                                                   
+                         
+                             </div>
+                              <div class="col-md-4">
+                                 <button class="btn btn-sm btn-success" style="align-items: center;"><span class="material-icons">send</span></button>
+                                <button class="btn btn-xs btn-warning"><span class="material-icons">insert_drive_file</span></button>
+                                <button class="btn btn-xs btn-rose"><span class="material-icons">insert_photos</span></button>
+                            </div>
+                        </div>
+                       
+                           
+                       
                     
                 </div>
                 </div>
             </div>
-             
-        </body>
 
-    <?php include 'partes/modal_tarea_alumno.php'; ?>
+            
             <!-- modal foto-->
-    <?php include 'partes/modal_camniar_foto.php'; ?>
+   
+        </body>
+  <?php include 'partes/footer.php'; ?>
+     <?php include 'partes/modal_tarea_alumno.php'; ?>
+   <?php include 'partes/modal_camniar_foto.php'; ?>
     <?php include 'partes/modal_confirmar_foto.php'; ?>
-    <?php include 'partes/footer.php'; ?>
        
     <?php require 'partes/scripts.php'; ?>
  

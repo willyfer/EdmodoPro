@@ -25,14 +25,12 @@
 </head>
 <body>
 	<?php include 'partes/header.php'; ?>
-	<div class="row" style="margin: 0px 16px;">
+	<div class="row" style="margin:  16px;">
 		<?php include 'partes/div_cursos_prof.php'; ?>
-		<div class="col-md-5" id="publicaciones">
+		<div class=" col-md-5" id="publicaciones">
 				 
-					<div  id=" ">
-    					<div class="title" style="">
-		                    <h3 class="h3"> Mis Publicaciones</h3>
-		                </div>
+					<div  id="contenido_publicacion">
+    					 
 		        		<div class="row" style="padding: 0px !important">
 		        			<div >
 		        				<div class="media-area" id="conatiner_posts_2">
@@ -45,7 +43,7 @@
 		        						</a>
 		        						<div class="media-body">
 		        							<h4 class="media-heading h4">Tina Andrew <small>· 7 minutes ago</small></h4>
-		        							<h6 class="text-muted">publicado el 23/34/19</h6>
+		        							 
 
 		        							<p>Chance too good. God level bars. I'm so proud of @LifeOfDesiigner #1 song in the country. Panda! Don't be scared of the truth because we need to restart the human foundation in truth I stand with the most humility. We are so blessed!</p>
 		        							<p>All praises and blessings to the families of people who never gave up on dreams. Don't forget, You're Awesome!</p>
@@ -93,11 +91,11 @@
 		        						 <p> Don't forget, You're Awesome!</p>
 
 		        						<div class="media-footer">
-		        							<a href="#pablo" class="btn btn-primary btn-simple pull-right" rel="tooltip" title="" data-original-title="Reply to Comment">
+		        							<a href="#pablo" class="btn   btn-simple pull-right" rel="tooltip" title="" data-original-title="Reply to Comment">
 		        								<i class="material-icons">reply</i> Comentar
 		        							</a>
 		        							<a href="#pablo" class="btn btn-default btn-simple pull-right">
-		        								<i class="material-icons">Like</i> 25
+		        								<i class="material-icons">favorite</i> 25
 		        							</a>
 		        						 </div>
 		        						 <div class="media">
@@ -113,8 +111,8 @@
 		        									<p> Don't forget, You're Awesome!</p>
 
 		        									<div class="media-footer">
-		        										<a href="#pablo" class="btn btn-primary btn-simple pull-right" rel="tooltip" title="" data-original-title="Reply to Comment">
-		        											<i class="material-icons">reply</i> Reply
+		        										<a href="#pablo" class="btn btn-simple pull-right" rel="tooltip" title="" data-original-title="Reply to Comment">
+		        											<i class="material-icons">reply</i> Comentar
 		        										</a>
 		        										<a href="#pablo" class="btn btn-danger btn-simple pull-right">
 		        											<i class="material-icons">favorite</i> 243
@@ -138,8 +136,8 @@
 		        								<p> Don't forget, You're Awesome!</p>
 
 		        								<div class="media-footer">
-		        									<a href="#pablo" class="btn btn-primary btn-simple pull-right" rel="tooltip" title="" data-original-title="Reply to Comment">
-		        										<i class="material-icons">comentar</i> Reply
+		        									<a href="#pablo" class="btn btn-simple pull-right" rel="tooltip" title="" data-original-title="Reply to Comment">
+		        										<i class="material-icons">reply</i> Comentar
 		        									</a>
 		        									<a href="#pablo" class="btn btn-danger btn-simple pull-right">
 		        										<i class="material-icons">favorite</i> 243
@@ -173,4 +171,5 @@
 
 <?php require 'partes/scripts.php'; ?>
  <script src="assets/js/mostrar_tareas.js"></script>
+  <script src="assets/js/cargar_tarea_revisar.js"></script>
 </html>

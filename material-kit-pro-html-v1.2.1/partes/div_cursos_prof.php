@@ -1,5 +1,5 @@
-	<div class="col-md-3  borde_w" id="Cursos">
-				 <div>	  <table class="table" style="color: white">
+	<div class="col-md-3  " id="Cursos">
+				 <div class="borde_w">	  <table class="table" >
                                             <thead>
                                                 <tr>
                                                     <th class="text-center">
@@ -74,7 +74,7 @@
                                             </tbody>
                       </table>
 				 </div>
-				 <div >
+				 <div class="borde_w" style="margin-top: 9px" >
 				  <?php include 'modelo/card_totate.php'; ?>
             
 				 </div>

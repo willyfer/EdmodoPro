@@ -38,7 +38,7 @@
      text-align: center;
  }
  .area-line a {
-     color: #666;
+     /*color: #666;*/
  }
  .container-fluid {
      padding-right: 15px;
@@ -50,7 +50,6 @@
  .pick-class-label {
      border-radius: 8px;
      border: 1px solid #999;
-     color: #ffffff;
      cursor: pointer;
      display: inline-block;
      font-size: 75%;
@@ -67,16 +66,18 @@
      opacity: 0.5;
  }
  .navbar.navbar-inverse {
-     background-color: black !important;
+     background-color: #2a5d84 !important;
      /*background-image: linear-gradient(to right, #18082c, #4f408a, #18082c) !important;*/
  }
  .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-     background-color: #212529;
+     background-color: #2a5d84;
+     /*#212529*/
      box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px yellow;
  }
  .media p {
-     color: white;
-     font-size: 15px;
+     /* color: white;*/
+     color: #49476c;
+     font-size: 13px;
  }
  .img_small {
      width: 44px !important;
@@ -86,7 +87,7 @@
      color: #4d67db;
  }
  p {
-     color: white;
+     /* color: white;*/
  }
  .dialog_cambiar_foto {
      width: 300px;
@@ -101,12 +102,13 @@
  #publicaciones {
      overflow: hidden;
      margin: 0px 15px;
-     height: 100%;
-     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(33, 33, 33, 0.46);
+     height: 40%;
+     /*  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(33, 33, 33, 0.46);*/
  }
  #container_posts {}
  #conatiner_posts_2 {
-     height: 500px;
+     height: 600px;
+     padding: 10px;
      width: calc(100% + 20px);
      overflow-y: scroll !important;
  }
@@ -129,49 +131,47 @@
      background-image: linear-gradient(to left, #3c3265, #4f408a);
  }
  body {
-     background-image: linear-gradient(to left, #23292f, #404851, #404851, #23292f);
+     /*background-image: linear-gradient(to left, #23292f, #404851, #404851, #23292f);*/
  }
  .borde_w {
-     border-radius: 5px;
-     border-width: 1px;
-     border-style: solid;
-     z-index: 3;
-     background-color: #23292f;
+     border-bottom: 5PX #2a5d84 solid;
      height: 100%;
+     padding: 9px;
  }
  .tittle {
-     color: white !important;
+     /*color: white !important;*/
  }
  .h3 {
-     color: white;
+     /* color: white;*/
  }
  .h4 {
-     color: white !important;
+     /* color: white !important;*/
  }
  .blanco tr td a {
-     color: white;
+     /*color: white;*/
  }
  .blanco tr td a:hover {
-     color: yellow;
+     / color: yellow;
  }
  .blanco ul li a {
      margin-left: 10px;
-     color: white;
+     color: black;
+     /* color: white;*/
  }
  .blanco ul li a:hover {
-     color: yellow;
+     /*color: yellow;*/
  }
  .negro_trans {
      opacity: 0.4;
  }
  .negro {
      background-color: black;
-     color: white;
+     /*color: white;*/
      z-index: 5;
      opacity: 1!important;
  }
  #publicaciones {
-     background-color: #23292f;
+     /* background-color: #23292f;*/
  }
  .transicio_w {}
  .card-background::after, .back-background::after, .front-background::after {
@@ -186,12 +186,15 @@
      padding: 9px;
  }
  .sms_conversacion {
-     background-color: #3f213f;
+     text-align: right;
+     width: inherit;
+     background-color: #cdd493;
      border-radius: 15px 0px 15px 15px;
      padding: 10px;
  }
  .sms_conversacion_yo {
-     background-color: #4d6d89cc;
+     width: auto;
+     background-color: #9bb8d1;
      border-radius: 0px 15px 15px 15px;
      padding: 10px
  }
@@ -205,4 +208,32 @@
      border-color: #e91e63 !important;
      border-style: solid !important;
      border-width: 1px !important;
+ }
+ @media screen and (max-width: 992px) {
+     #div_body {
+         height: initial!important;
+     }
+     .modal-dialog {
+         width: 300px;
+     }
+ }
+ @media screen and (max-width: 314px) {
+     .modal-dialog {
+         width: 250px;
+     }
+ }
+ .input_calificar {
+     width: 40px;
+     border-style: none;
+     border-color: #2a5d84;
+     border-style: solid;
+     border-radius: 5px;
+     color: black;
+     font-size: 12px;
+ }
+ .borde_azul {
+     border-bottom: 5PX #2a5d84 solid;
+ }
+ .borde_costado {
+     border-right: solid gray 1px;
  }
