@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="es">
 <head>
@@ -30,7 +31,7 @@
 		            <span class="icon-bar"></span>
 		            <span class="icon-bar"></span>
         		</button>
-        		<a class="navbar-brand" href="../index.html">Pagina de Inicio</a>
+        		<a class="navbar-brand" href="../index.php">Pagina de Inicio</a>
         	</div>
 
         	<div class="collpase navbar-collapse">
@@ -44,7 +45,7 @@
 			<div class="row">
 				<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
 					<div class="card card-signup">
-						<form class="form" method="" action="">
+						<form class="form" method="POST" action="../validar.php">
 							<div class="header header-primary text-center">
 								<h4 class="card-title">Log in</h4>
 								<div class="social-line">
@@ -61,26 +62,26 @@
 							</div>
 							<p class="description text-center">O de forma clasica</p>
 							<div class="card-content">
-
+								
 								<div class="input-group">
 									<span class="input-group-addon">
 										<i class="material-icons">face</i>
 									</span>
-									<input type="text" class="form-control" placeholder="Codigo...">
+									<input type="text" name="textusuario" class="form-control" placeholder="Codigo...">
 								</div>
 
 								<div class="input-group">
 									<span class="input-group-addon">
 										<i class="material-icons">email</i>
 									</span>
-									<input type="text" class="form-control" placeholder="Email...">
+									<input type="text" name="email" class="form-control" placeholder="Email...">
 								</div>
 
 								<div class="input-group">
 									<span class="input-group-addon">
 										<i class="material-icons">lock_outline</i>
 									</span>
-									<input type="password" placeholder="Password..." class="form-control" />
+									<input type="password"  name="textpass" placeholder="Password..." class="form-control" />
 								</div>
 
 								<!-- If you want to add a checkbox to this form, uncomment this code
@@ -93,7 +94,7 @@
 								</div> -->
 							</div>
 							<div class="footer text-center">
-								<a href="#pablo" class="btn btn-primary btn-simple btn-wd btn-lg">Get Started</a>
+								<button  name="login" class="btn btn-primary btn-simple btn-wd btn-lg">Get Started</button>
 							</div>
 						</form>
 					</div>
