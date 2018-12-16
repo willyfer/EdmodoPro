@@ -45,7 +45,7 @@
 			<div class="row">
 				<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
 					<div class="card card-signup">
-						<form class="form" method="POST" action="../validar.php">
+						<form class="form" action="" id= "formlg">
 							<div class="header header-primary text-center">
 								<h4 class="card-title">Log in</h4>
 								<div class="social-line">
@@ -67,7 +67,7 @@
 									<span class="input-group-addon">
 										<i class="material-icons">face</i>
 									</span>
-									<input type="text" name="textusuario" class="form-control" placeholder="Codigo...">
+									<input type="text" name="usuariolg" class="form-control" placeholder="Codigo...">
 								</div>
 
 								<div class="input-group">
@@ -81,7 +81,7 @@
 									<span class="input-group-addon">
 										<i class="material-icons">lock_outline</i>
 									</span>
-									<input type="password"  name="textpass" placeholder="Password..." class="form-control" />
+									<input type="password"  name="passlg" placeholder="Password..." class="form-control" />
 								</div>
 
 								<!-- If you want to add a checkbox to this form, uncomment this code
@@ -94,7 +94,7 @@
 								</div> -->
 							</div>
 							<div class="footer text-center">
-								<button  name="login" class="btn btn-primary btn-simple btn-wd btn-lg">Get Started</button>
+								<button type= "submit" name="login" class="btn btn-primary btn-simple btn-wd btn-lg">Get Started</button>
 							</div>
 						</form>
 					</div>
@@ -115,6 +115,8 @@
 </body>
 	<!--   Core JS Files   -->
 	<script src="../assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="../main.js" type="text/javascript"></script>
+
 	<script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="../assets/js/material.min.js"></script>
 
