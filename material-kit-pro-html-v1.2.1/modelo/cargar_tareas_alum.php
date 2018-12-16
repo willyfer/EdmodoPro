@@ -1,18 +1,18 @@
+	 <button class="btn btn-xs btn-rose">ver notas </button>
 	 <table class="table table-responsive">
-				 	 	 
-				 	 	<thead style="color: white">
+				 	 	
+				 	 	<thead  >
 				 	 		<tr>
 				 	 			 <th>Matematica</th>
 				 	 			 
 				 	 		</tr>
 				 	 	</thead>
-				 	 	<tbody style="color: white">
+				 	 	<tbody  >
 				 	 		<tr>
 				 	 			<td>titulo del trabajo
 				 	 			</td>
 				 	 			<td>
-
-                                <a class="   btn-xs btn-round btn-warning " id="btn_tarea1">
+ 									<a class="btn  btn-xs btn-round btn-warning " data-target="#noticeModal" data-toggle="modal">
                                     <i class="material-icons">
                                         info_outline
                                     </i>
@@ -80,3 +80,4 @@
 				 	 	</tbody>
 
 				 	 </table>
+				 	 

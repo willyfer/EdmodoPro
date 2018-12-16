@@ -151,7 +151,7 @@
      /*color: white;*/
  }
  .blanco tr td a:hover {
-     / color: yellow;
+     color: red;
  }
  .blanco ul li a {
      margin-left: 10px;
@@ -188,13 +188,11 @@
  .sms_conversacion {
      text-align: right;
      width: inherit;
-     background-color: #cdd493;
      border-radius: 15px 0px 15px 15px;
      padding: 10px;
  }
  .sms_conversacion_yo {
      width: auto;
-     background-color: #9bb8d1;
      border-radius: 0px 15px 15px 15px;
      padding: 10px
  }
@@ -224,11 +222,11 @@
  }
  .input_calificar {
      width: 40px;
-     border-style: none;
      border-color: #2a5d84;
      border-style: solid;
-     border-radius: 5px;
+     border-width: 1px;
      color: black;
+     border-radius: 5px;
      font-size: 12px;
  }
  .borde_azul {
@@ -236,4 +234,8 @@
  }
  .borde_costado {
      border-right: solid gray 1px;
+     padding: 34px;
+ }
+ #sms_1 {
+     padding: 15px;
  }
