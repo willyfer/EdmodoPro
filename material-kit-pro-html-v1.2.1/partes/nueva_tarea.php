@@ -6,44 +6,47 @@
   
    
       </div>
-     
-      <div class="modal-body" style="padding: 7px;margin:7px;display: flex;"> 
+            <h4>Crear Nueva Tarea</h4> 
+      <div class="modal-body"  ">
+
+        <div style="margin:0px 5px">
+          
+
+        
         <form action="php_esencial/registrar_tarea.php" method="POST">
           
  
-         <h4>Crear Nueva Tarea</h4>
-          <h5 class="modal-title" id="myModalLabel"> </h5><br>
-          <h6>Asunto</h6>
-          <input class="input-group-sm border_input"   id="titulo"   type="text" placeholder="escribe aquí">
-          <div class="row">
-            <div style="margin:17px">
-                <h6>Descripción</h6>
-                <textarea  id="des" class="input-group-sm border_input" style="" rows="1"></textarea>
-            </div>
-           
-           
-           <!-- input with datetimepicker -->
-           <div class="form-group">
-              <label class="label-control">Datetime Picker</label>
-              <input type="text" class="form-control datetimepicker" value="10/05/2016"/>
-          </div>
-              <div class="form-group col-md-6">
-                 <h6>Seleccionar Fecha límite</h6>
-                  <input type="text" id="fec_fin" class="form-control datetimepicker border_input"    />
-              </div>
         
-               
+          <h5 class="modal-title" id="myModalLabel"> </h5><br>
+         
+          <input class="  "  style="padding: 6px 17px; border: 1px purple solid ;width: 100%;border-width: 0px 0px 3px 0px"  id="titulo"   type="text" placeholder="TITULO DE LA TAREA">
+           
+            
+                  
+                  <textarea  placeholder="Descripcion de la tarea" style="padding: 0px 17px; border-bottom: 1px purple solid ;width: 100%;border-width: 0px 0px 3px 0px;margin-top: 20px;" id="des" class="input-group-sm  " style="" rows="1"></textarea>
+             
+             
+             <!-- input with datetimepicker -->
+             <div class="form-group">
+                <h6>Seleccionar Fecha de inicio  </h6>
+
+
+                <input type="text" class="form-control datetimepicker" value="10/05/2016  Haz Click"/>
+              </div> 
+                   <h6>Seleccionar Fecha límite</h6>
+            <div class="form-group">
+             <input type="text" id="fec_fin" class="form-control datetimepicker "value="10/05/2016  Haz Click"    />
           </div>
-                
     
-            <div class="modal-footer text-center">
+    
+            <div class="  text-center">
                 
-                <button class="btn btn-success btn-round "  onclick='javascript:loadnuevatareas(<?php  echo $curso_id . ',' . $grado_id . ',' . $seccion_id; ?>);' type="button">Crear Tarea</button>
+                <button class="btn btn-success  btn-sm btn-round btn-block "  onclick='javascript:loadnuevatareas(<?php  echo $curso_id . ',' . $grado_id . ',' . $seccion_id; ?>);' type="button">Crear Tarea</button>
             
             </div>
        </form>
-
-       <div class="">
+      </div>
+       <div class="" style="margin:10px ; padding: 5px; " >
               <form action="php_esencial/uploadfile.php"  method="POST"  id="enviar_file"  enctype="multipart/form-data">
                <div class="fileinput fileinput-new text-center" data-provides="fileinput">
                <div class="fileinput-new thumbnail img-raised">
@@ -64,7 +67,7 @@
                 </div>
                 </form>
 
-              </div>
+          </div>
 
     
        </div>
@@ -87,4 +90,4 @@
      
      
 
-<script src="assets/js/jquery.min.js" type="text/javascript"></script> 
+<script src="../assets/js/jquery.min.js" type="text/javascript"></script> 

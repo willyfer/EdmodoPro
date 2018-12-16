@@ -89,7 +89,7 @@ function loadnuevatareas(c,g,s) {
 
           success:function(respuestazz){
             
-              alert(  respuestazz);
+              location.reload();
          
       
           }
