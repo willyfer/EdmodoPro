@@ -1,3 +1,8 @@
+<?php
+    require 'conexion.php';
+?>
+
+
 <!DOCTYPE doctype html>
 <html lang="en">
     <head>
@@ -41,7 +46,7 @@
                 <div class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto">
                         <li class=" nav-item">
-                            <a class="toggle nav-lin btn-success btn-lg" href="examples/login-page.html" onclick="menu.html" style="background-color: #042E66">
+                            <a class="toggle nav-lin btn-success btn-lg" href="examples/login-page.php" onclick="menu.html" style="background-color: #042E66">
                                 <i class="material-icons">
                                     supervisor_account
                                 </i>
