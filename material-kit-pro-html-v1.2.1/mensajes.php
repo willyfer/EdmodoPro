@@ -27,33 +27,33 @@
                     <h4 class="h4">Mensajes</h4>
                     <ul class="nav"  >
                         <li><div  >  
-                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">Pedro Ramirez</a>  <span class=" badge navbar-right">5</span>
+                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">Pedro Ramirez</a>  <span class=" badge ">5</span>
                              </div>
                            
 
 
                         </li>
                       <li><div>  
-                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">juan Ramirez</a>  <span class=" badge navbar-right">5</span>
+                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">juan Ramirez</a>  <span class=" badge ">5</span>
                              </div>
                            
                         </li>
                          <li><div>  
-                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">maria Ramirez</a><span class=" badge navbar-right">5</span>
+                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">maria Ramirez</a><span class=" badge ">5</span>
                              </div>
                              
                         </li>
                          <li><div>  
-                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">jose Ramirez</a>  <span class=" badge navbar-right">5</span>
+                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">jose Ramirez</a>  <span class=" badge ">5</span>
                              </div>
                         </li>
                          <li><div>  
-                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">paty Ramirez</a>  <span class=" badge navbar-right">5</span>
+                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">paty Ramirez</a>  <span class=" badge ">5</span>
                              </div>
                            
                         </li>
                          <li><div>  
-                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">lorena Ramirez</a>  <span class=" badge navbar-right">5</span>
+                             <img src="assets/img/faces/avatar.jpg" class="img-circle img-rounded img_peque" alt=""> <a href="">lorena Ramirez</a>  <span class=" badge ">5</span>
                              </div>
                              
                         </li>

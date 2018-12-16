@@ -23,154 +23,84 @@
 	<link href="assets/assets-for-demo/demo.css" rel="stylesheet" />
 	<link rel="stylesheet" href="assets/css/indice.css">
 	<link rel="stylesheet" href="assets/demo/demo.css">
+	 
 </head>
 <body>
+	<?php SESSION_START();
+		$_SESSION['usuario']="willy";
+		 $_SESSION['id']=2;
+		$_SESSION['contraseña']="dfdfsdf";
+ 	 
+	?>
 	<?php include 'partes/header.php'; ?>
 	<div class="row" style="margin:  16px;">
 		<?php include 'partes/div_cursos_prof.php'; ?>
 		<div class=" col-md-5" id="publicaciones">
 				 
 					<div  id="contenido_publicacion">
-    					 
 		        		<div class="row" style="padding: 0px !important">
 		        			<div >
 		        				<div class="media-area" id="conatiner_posts_2">
 		        					 
-		        					<div class="media">
-		        						<a class="pull-left" href="#pablo">
-		        							<div class="avatar">
-		        								<img class="media-object" src="assets/img/faces/avatar.jpg" alt="...">
-		        							</div>
-		        						</a>
-		        						<div class="media-body">
-		        							<h4 class="media-heading h4">Tina Andrew <small>· 7 minutes ago</small></h4>
-		        							 
-
-		        							<p>Chance too good. God level bars. I'm so proud of @LifeOfDesiigner #1 song in the country. Panda! Don't be scared of the truth because we need to restart the human foundation in truth I stand with the most humility. We are so blessed!</p>
-		        							<p>All praises and blessings to the families of people who never gave up on dreams. Don't forget, You're Awesome!</p>
-
-		        							<div class="media-footer">
-		        								<a href="#pablo" class="btn btn-default btn-simple pull-right" rel="tooltip" title="" data-original-title="Reply to Comment">
-		        									<i class="material-icons">reply</i> comentar
-		        								<div class="ripple-container"></div></a>
-		        								<a href="#pablo" class="btn btn-danger btn-simple pull-right">
-		        									<i class="material-icons">favorite</i> 243
-		        								<div class="ripple-container"></div></a>
-		        							</div>
-
-		        							<div class="media media-post ">
-		        								<a class="pull-left author  " href="#pablo">
-		        									<div class="avatar img">
-		        										<img class="media-object  " alt="64x64" src="assets/img/faces/kendall.jpg">
-		        									</div>
-		        								</a>
-		        								<div class="media-body">
-		        										<div class="form-group is-empty row " style="display: flex;">
-		        											<textarea class="form-control "  placeholder="Comentar algo..." rows="1"></textarea>
-		        											<a href="#pablo" class="btn  btn-rose btn-xs pull-right">
-		        												<i class="material-icons">reply</i> Reply
-		        													 
-		        											</a>
-		        											<span class="material-input"></span>
-		        										</div>
-		        										 
-		        								</div>
-		        							</div>
-		        						</div>
-		        					</div>
-
-		        					<div class="media">
-		        					  <a class="pull-left" href="#pablo">
-		        						  <div class="avatar">
-		        							 <img class="media-object" alt="Tim Picture" src="assets/img/faces/marc.jpg">
-		        						  </div>
-		        					  </a>
-		        					  <div class="media-body">
-		        						 <h4 class="media-heading">John Camber <small>· Yesterday</small></h4>
-
-		        						 <p>Hello guys, nice to have you on the platform! There will be a lot of great stuff coming soon. We will keep you posted for the latest news.</p>
-		        						 <p> Don't forget, You're Awesome!</p>
-
-		        						<div class="media-footer">
-		        							<a href="#pablo" class="btn   btn-simple pull-right" rel="tooltip" title="" data-original-title="Reply to Comment">
-		        								<i class="material-icons">reply</i> Comentar
-		        							</a>
-		        							<a href="#pablo" class="btn btn-default btn-simple pull-right">
-		        								<i class="material-icons">favorite</i> 25
-		        							</a>
-		        						 </div>
-		        						 <div class="media">
-		        							  <a class="pull-left" href="#pablo">
-		        									<div class="avatar">
-		        										<img class="media-object" alt="64x64" src="assets/img/faces/avatar.jpg">
-		        									</div>
-		        							  </a>
-		        							  <div class="media-body">
-		        									<h4 class="media-heading">Tina Andrew <small>· 2 Days Ago</small></h4>
-
-		        									<p>Hello guys, nice to have you on the platform! There will be a lot of great stuff coming soon. We will keep you posted for the latest news.</p>
-		        									<p> Don't forget, You're Awesome!</p>
-
-		        									<div class="media-footer">
-		        										<a href="#pablo" class="btn btn-simple pull-right" rel="tooltip" title="" data-original-title="Reply to Comment">
-		        											<i class="material-icons">reply</i> Comentar
-		        										</a>
-		        										<a href="#pablo" class="btn btn-danger btn-simple pull-right">
-		        											<i class="material-icons">favorite</i> 243
-		        										</a>
-		        									</div>
-		        							  </div>
-		        						  </div>
-		        					  </div>
-		        					</div>
-
-		        					<div class="media">
-		        						  <a class="pull-left" href="#pablo">
-		        							  <div class="avatar">
-		        									<img class="media-object" alt="64x64" src="assets/img/faces/kendall.jpg">
-		        							  </div>
-		        						  </a>
-		        						  <div class="media-body">
-		        								<h4 class="media-heading">Rosa Thompson <small>· 2 Days Ago</small></h4>
-
-		        								<p>Hello guys, nice to have you on the platform! There will be a lot of great stuff coming soon. We will keep you posted for the latest news.</p>
-		        								<p> Don't forget, You're Awesome!</p>
-
-		        								<div class="media-footer">
-		        									<a href="#pablo" class="btn btn-simple pull-right" rel="tooltip" title="" data-original-title="Reply to Comment">
-		        										<i class="material-icons">reply</i> Comentar
-		        									</a>
-		        									<a href="#pablo" class="btn btn-danger btn-simple pull-right">
-		        										<i class="material-icons">favorite</i> 243
-		        									</a>
-		        								</div>
-		        						  </div>
-		        					</div>
-
-		        				 
-		        				</div>
-
- 
+		        					 <?php require 'php_esencial/onsultar_post.php'; ?>
+  							    </div>
 		        			</div>
 		        		</div>
-					 </div>
-			</div>
+
+		        				 
+		        				 
+		       		</div>
+
+ 
+		    </div>
+		 
+					 
+			 
 		<?php include 'partes/div_tareas_prof.php'; ?>
 	</div>
 	
 	<?php include 'partes/modal_tarea_alumno.php'; ?>
 <!-- modal foto-->
 	<?php include 'partes/modal_camniar_foto.php'; ?>
-	<?php 	include 'partes/nueva_tarea.php'; ?>
+	
 	<?php 	include 'partes/revisar_tarea.php'; ?>
+	
  
 <!-- Modal alert confirmar cambio de foto de perfil-->	
 <?php include 'partes/modal_confirmar_foto.php'; ?>
 <?php include 'partes/footer.php'; ?>
-	
+	  <?php require 'partes/scripts.php'; ?>
 </body>
 
-<?php require 'partes/scripts.php'; ?>
- <script src="assets/js/mostrar_tareas.js"></script>
-  <script src="assets/js/cargar_tarea_revisar.js"></script>
+
+ <script type="text/javascript">
+function loadnuevatareas(c,g,s) {
+ 
+    var id_d= document.getElementById("des").value;
+      var id_f = document.getElementById("fec_fin").value;
+       var id_doc = document.getElementsByName("archivo").value;
+        var id_t = document.getElementById("titulo").value;
+
+    document.getElementById("enviar_file").submit();
+      $.ajax({
+          type:'POST',
+          url:'php_esencial/registrar_tarea.php',
+          data:('titulo='+ id_t +'&des='+ id_d + '&fec_fin=' +id_f  + "&C="+ c +"&S=" + s+ "&G=" +g),
+
+          success:function(respuestazz){
+            
+              alert(  respuestazz);
+         
+      
+          }
+
+      })
+    }
+   
+  
+ 
+</script>
+ 
+ 
+  
 </html>
