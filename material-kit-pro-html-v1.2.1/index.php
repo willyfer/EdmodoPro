@@ -261,6 +261,7 @@
                     </script>
                     <script src="./assets/jss/core/jquery.min.js" type="text/javascript">
                     </script>
+                    <script src="../main.js" type="text/javascript"></script>
                     <script src="./assets/jss/core/popper.min.js" type="text/javascript">
                     </script>
                     <script src="./assets/jss/core/bootstrap-material-design.min.js" type="text/javascript">
@@ -301,7 +302,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="" class="form" method="">
+                    <form class="form" action="" id= "formlg">
                         <p class="description text-center">
                             Inserte Codigo
                         </p>
@@ -312,7 +313,7 @@
                                         face
                                     </i>
                                 </span>
-                                <input class="form-control" placeholder="Codigo..." type="text">
+                                <input type="text" name="usuariolg" pattern = "[A-Za-z0-9_-]{1,15}" required class="form-control" placeholder="Codigo...">
                                 </input>
                             </div>
                             <div class="input-group">
@@ -321,7 +322,7 @@
                                         lock_outline
                                     </i>
                                 </span>
-                                <input class="form-control" placeholder="Password..." type="password"/>
+                                <input type="password"  name="passlg" pattern = "[A-Za-z0-9_-]{1,15}" required placeholder="Password..." class="form-control" />
                             </div>
                             <!-- If you want to add a checkbox to this form, uncomment this code
 

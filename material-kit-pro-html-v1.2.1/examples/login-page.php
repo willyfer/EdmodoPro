@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 <html lang="es">
 <head>
@@ -67,7 +68,7 @@
 									<span class="input-group-addon">
 										<i class="material-icons">face</i>
 									</span>
-									<input type="text" name="usuariolg" class="form-control" placeholder="Codigo...">
+									<input type="text" name="usuariolg" pattern = "[A-Za-z0-9_-]{1,15}" required class="form-control" placeholder="Codigo...">
 								</div>
 
 								<div class="input-group">
@@ -81,7 +82,7 @@
 									<span class="input-group-addon">
 										<i class="material-icons">lock_outline</i>
 									</span>
-									<input type="password"  name="passlg" placeholder="Password..." class="form-control" />
+									<input type="password"  name="passlg" pattern = "[A-Za-z0-9_-]{1,15}" required placeholder="Password..." class="form-control" />
 								</div>
 
 								<!-- If you want to add a checkbox to this form, uncomment this code
