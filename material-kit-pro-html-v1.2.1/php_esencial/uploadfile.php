@@ -5,7 +5,7 @@ require  'conexion.php';
 $directorio="../assets/img/faces/";
   $nombre= basename($_FILES["archivo"]["name"]);
 $archivo=$directorio  . $nombre;
- echo $nombre;
+  
 $tipoderarchivo= strtolower(pathinfo($archivo,PATHINFO_EXTENSION));
 // valida quees imagen
 $size=getimagesize($_FILES["archivo"]["tmp_name"]);
@@ -24,12 +24,10 @@ if($size!=false){
  
 
 			  $conn->exec($sql);
-
-			 echo "archivo subido exitosamente!!! ";
-			
+ 			
 		
 		}else{
-			echo "error al subir archivo";
+			 
 		}
 }
  } catch (Exception $e) {

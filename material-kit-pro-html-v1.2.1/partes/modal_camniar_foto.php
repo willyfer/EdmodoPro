@@ -1,4 +1,4 @@
-<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade negro_trans " id="Modal_foto" role="dialog" tabindex="-1" style="display: none">
+ <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade negro_trans " id="Modal_foto" role="dialog" tabindex="-1" style="display: none">
             <div class="modal-dialog dialog_cambiar_foto negro">
                 <div class="modal-content">
                     <div class="modal-header">

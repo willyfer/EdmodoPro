@@ -185,7 +185,7 @@ session_start();
 			  
 	
 </body>
-<?php require 'partes/scripts.php'; ?>
  <script src="assets/js/mostrar_tareas_alum.js"></script>
- 
+ <?php require 'partes/scripts.php'; ?>
+
 </html>

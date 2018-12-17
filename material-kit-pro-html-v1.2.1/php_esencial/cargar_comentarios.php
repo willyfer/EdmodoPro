@@ -90,5 +90,4 @@ require 'conexion.php';
 
 
 
-
- <script src="assets/js/cargar_iconos_cursos.js"> </script>
+ 

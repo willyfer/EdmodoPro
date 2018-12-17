@@ -63,13 +63,13 @@
 <!-- modal foto-->
 	<?php include 'partes/modal_camniar_foto.php'; ?>
 	
-	<?php 	include 'partes/revisar_tarea.php'; ?>
+	 
 	
- 
+ <?php include 'partes/nueva_tarea.php';  ?>  
 <!-- Modal alert confirmar cambio de foto de perfil-->	
 <?php include 'partes/modal_confirmar_foto.php'; ?>
 <?php include 'partes/footer.php'; ?>
-	  <?php require 'partes/scripts.php'; ?>
+	 
 </body>
 
 
@@ -77,30 +77,70 @@
 function loadnuevatareas(c,g,s) {
  
     var id_d= document.getElementById("des").value;
+    var id_f_i=document.getElementById("fech_ini").value;
       var id_f = document.getElementById("fec_fin").value;
        var id_doc = document.getElementsByName("archivo").value;
         var id_t = document.getElementById("titulo").value;
 
-    document.getElementById("enviar_file").submit();
+  
       $.ajax({
           type:'POST',
           url:'php_esencial/registrar_tarea.php',
-          data:('titulo='+ id_t +'&des='+ id_d + '&fec_fin=' +id_f  + "&C="+ c +"&S=" + s+ "&G=" +g),
+          data:('titulo='+ id_t +'&des='+ id_d + '&fec_fin=' +id_f  +"&fec_ini=" + id_f_i+ "&C="+ c +"&S=" + s+ "&G=" +g),
 
           success:function(respuestazz){
-            
-              location.reload();
+           alert(respuestazz);
+              document.getElementById("enviar_file").submit();
+              location.load("menu_alumno.php");
          
       
           }
 
       })
     }
+
+    function revisar_tarea(){
+
+    		id
+
+
+    }
    
   
  
 </script>
- 
+     
+ <?php require 'partes/scripts.php'; ?>
+
+<script  type="text/javascript">
+
+       	document.ready(function{
+
+$('.datetimepicker').datetimepicker({
+    icons: {
+        time: "fa fa-clock-o",
+        date: "fa fa-calendar",
+        up: "fa fa-chevron-up",
+        down: "fa fa-chevron-down",
+        previous: 'fa fa-chevron-left',
+        next: 'fa fa-chevron-right',
+        today: 'fa fa-screenshot',
+        clear: 'fa fa-trash',
+        close: 'fa fa-remove'
+    }
+});
+
+
+
+       	});
+</script>
+
+<script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+</script>
  
   
-</html>
+ 
+	</html>

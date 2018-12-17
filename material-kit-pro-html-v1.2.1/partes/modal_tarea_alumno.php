@@ -1,4 +1,7 @@
- <div class="modal fade negro_trans" id="noticeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+
+
+ <div class="modal fade negro_trans" id="noticeModal" tabindex="-1" role="dialog" aria-labelledby="modal_alumno" aria-hidden="true">
   <div class="modal-dialog modal-notice " style="width: 500px">
     <div class="modal-content   " >
       <div class="modal-header">
