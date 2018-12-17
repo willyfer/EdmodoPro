@@ -1,11 +1,11 @@
 
 
 <?php 
-require 'conexion.php';
 
  try {
 
- 
+ require 'conexion_w.php';
+
  
 
  	 	

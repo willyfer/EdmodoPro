@@ -1,3 +1,10 @@
+
+<?php session_start();
+		$_SESSION['usuario']="willy";
+		 $_SESSION['id']=2;
+		$_SESSION['contraseña']="dfdfsdf";
+ 	 
+	?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,12 +33,7 @@
 	 
 </head>
 <body>
-	<?php SESSION_START();
-		$_SESSION['usuario']="willy";
-		 $_SESSION['id']=2;
-		$_SESSION['contraseña']="dfdfsdf";
- 	 
-	?>
+	
 	<?php include 'partes/header.php'; ?>
 	<div class="row" style="margin:  16px;">
 		<?php include 'partes/div_cursos_prof.php'; ?>
@@ -65,7 +67,7 @@
 	
 	 
 	
- <?php include 'partes/nueva_tarea.php';  ?>  
+ 
 <!-- Modal alert confirmar cambio de foto de perfil-->	
 <?php include 'partes/modal_confirmar_foto.php'; ?>
 <?php include 'partes/footer.php'; ?>
@@ -89,9 +91,18 @@ function loadnuevatareas(c,g,s) {
           data:('titulo='+ id_t +'&des='+ id_d + '&fec_fin=' +id_f  +"&fec_ini=" + id_f_i+ "&C="+ c +"&S=" + s+ "&G=" +g),
 
           success:function(respuestazz){
-           alert(respuestazz);
-              document.getElementById("enviar_file").submit();
-              location.load("menu_alumno.php");
+         
+
+           try {
+             document.getElementById("enviar_file").submit();
+             location.reload();
+           } catch(e) {
+            location.reload();
+           	// statements
+           	console.log(e);
+           }
+            
+              
          
       
           }

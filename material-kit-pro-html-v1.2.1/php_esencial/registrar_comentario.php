@@ -1,6 +1,6 @@
 <?php 
 
-require 'conexion.php';
+require 'conexion_w.php';
 
 try {
 	  if(!isset($_SESSION)) 

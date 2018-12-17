@@ -1,6 +1,3 @@
-
-
-
  <div class="modal fade" id="nuevatarea" tabindex="-1" role="dialog" aria-labelledby="modal_tarea" aria-hidden="true">
   <div class="modal-dialog modal-notice " >
     <div class="modal-content"  >
@@ -104,9 +101,9 @@
         
       </div>
 
-       <?php include 'partes/nueva_tarea.php';  ?>  
+         
      
-<?php require 'partes/scripts.php'; ?>
+<?php require '../partes/scripts.php'; ?>
 <script type="text/javascript">
             $(function () {
                 $('#datetimepicker1').datetimepicker();

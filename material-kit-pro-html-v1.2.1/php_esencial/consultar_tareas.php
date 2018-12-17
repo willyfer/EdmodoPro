@@ -1,10 +1,10 @@
 
 
 <?php 
-require 'conexion.php';
+
 
 try {
-	
+	require 'conexion_w.php';
 	  
 	 if (isset($_POST['CURSO']) && isset($_POST['SECCION']) &&  isset($_POST['GRADO'])&&isset($_POST['nc'])) {
 	  
@@ -69,6 +69,7 @@ try {
 		 </tbody>
 
 		</table>	
+		 <?php include '../partes/nueva_tarea.php';  ?> 
  <?php 	
   }
    
