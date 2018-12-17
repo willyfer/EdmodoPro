@@ -1,10 +1,10 @@
 
 
 <?php 
-require 'conexion.php';
+
 
 try {
-	
+	require 'conexion_w.php';
 	  
 	 if (isset($_POST['CURSO']) && isset($_POST['SECCION']) &&  isset($_POST['GRADO'])&&isset($_POST['nc'])) {
 	  
@@ -69,9 +69,10 @@ try {
 		 </tbody>
 
 		</table>	
+		 <?php include '../partes/nueva_tarea.php';  ?> 
  <?php 	
   }
-   include '../partes/nueva_tarea.php'; 
+   
 } catch (PDOException $e) {
 	echo "Error: " . $e->getMenssage();
 
@@ -81,25 +82,4 @@ try {
  ?>
 
 
-
- <script type="text/javascript">
  
-   
-  
- 
-</script>
-
-<script src="../assets/js/jquery.min.js" type="text/javascript"></script>
-	<script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="../assets/js/material.min.js"></script>
-
-	<!--  Plugin for Date Time Picker and Full Calendar Plugin-->
-	<script src="assets/js/moment.min.js"></script>
-<script src="../assets/js/bootstrap-datetimepicker.js" type="text/javascript"></script>
-	<!--	Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-	<script src="../assets/js/nouislider.min.js" type="text/javascript"></script>
-	<script src="../assets/js/bootstrap-selectpicker.js" type="text/javascript"></script>
-
- 	<script src="../assets/js/date.js"></script>
- <script src="assets/js/cargar_iconos_cursos.js"> </script>
-   

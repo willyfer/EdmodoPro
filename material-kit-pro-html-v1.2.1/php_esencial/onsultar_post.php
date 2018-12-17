@@ -1,10 +1,10 @@
 
 <?php 
 
-require 'conexion.php';
+
 
 try {
-	
+	require 'conexion_w.php';
 
     if(!isset($_SESSION)) 
     { 

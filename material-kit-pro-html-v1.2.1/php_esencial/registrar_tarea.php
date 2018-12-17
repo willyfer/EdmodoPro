@@ -1,5 +1,5 @@
 <?php 
-require 'conexion.php';
+require 'conexion_w.php';
  
 try {
 
@@ -12,14 +12,16 @@ try {
       $nombre_tareaw=$_POST['titulo'];
      
 $desc_tarea=$_POST['des'];
-$fech_ini="2018-12-14";
+ 
 $fech_final=substr($_POST['fec_fin'],0,10);
+$fech_inicial=substr($_POST['fec_ini'],0,10);
+echo $fech_inicial;
 $tipo="n";
 $nulo=null;
 $CC=$_POST['C'];
 $GG=$_POST['G'];
 $SS=$_POST['S'];
- 
+ echo $fech_inicial;
 
  
 
@@ -28,7 +30,7 @@ $SS=$_POST['S'];
 
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = "INSERT INTO tb_tarea (tb_tarea_id,tb_tarea_nombre,tb_tarea_desc,tb_tarea_fec_ini,tb_tarea_fecha_fin,tb_tarea_tipo) VALUES (null,'$nombre_tareaw','$desc_tarea','$fech_ini','$fech_final','$tipo')";
+    $sql = "INSERT INTO tb_tarea (tb_tarea_id,tb_tarea_nombre,tb_tarea_desc,tb_tarea_fec_ini,tb_tarea_fecha_fin,tb_tarea_tipo) VALUES (null,'$nombre_tareaw','$desc_tarea','$fech_inicial','$fech_final','$tipo')";
     // use exec() because no results are returned
     $conn->exec($sql);
 

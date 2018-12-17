@@ -239,3 +239,6 @@
  #sms_1 {
      padding: 15px;
  }
+ .bootstrap-datetimepicker-widget.dropdown-menu.bottom {
+     top: 26px! important;
+ }

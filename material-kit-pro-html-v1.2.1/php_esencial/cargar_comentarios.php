@@ -1,11 +1,11 @@
 
 
 <?php 
-require 'conexion.php';
 
  try {
 
- 
+ require 'conexion_w.php';
+
  
 
  	 	
@@ -90,5 +90,4 @@ require 'conexion.php';
 
 
 
-
- <script src="assets/js/cargar_iconos_cursos.js"> </script>
+ 

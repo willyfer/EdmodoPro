@@ -1,4 +1,7 @@
-<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="confirmar_foto" role="dialog" tabindex="-1" style="display: none;">
+
+
+
+<div aria-hidden="true" aria-labelledby="modal_foto" class="modal fade" id="confirmar_foto" role="dialog" tabindex="-1" style="display: none;">
             <div class="modal-dialog modal-small ">
                 <div class="modal-content">
                     <div class="modal-header">
