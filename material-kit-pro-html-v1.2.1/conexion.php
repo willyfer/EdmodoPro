@@ -1,12 +1,6 @@
 <?php
-    $server = 'localhost';
-    $username = 'root';
-    $password = '';
-    $database = 'db_colegio';
-
-    try {
-        $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
-    } catch (PDOException $e) {
-    die('Connection Failed: ' . $e->getMessage());
-    }
+    $mysqli = new mysqli('localhost','root','','db_colegio');
+    if($mysqli -> connect_errno):
+        echo "Error al conectarse con MYSQL debido al error".$mysqli->connect_error;
+    endif;
 ?>
