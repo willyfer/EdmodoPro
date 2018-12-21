@@ -116,10 +116,13 @@ $statement = $conn->prepare('SELECT tb_tarea_id, tb_post_id from tb_post where t
 		        								</div>
 		        							</div>
 		        						
-		        					</div>
-		        						<?php include 'cargar_comentarios.php'; ?>
-
 		        						</div>
+		        						<div id="comentarios">
+		        							 <?php include 'cargar_comentarios.php'; ?>
+		        						</div>
+		        						 
+
+		       </div>
 
 								
  <?php
@@ -140,7 +143,7 @@ $cont++;
 
  <script>	
  
-function ver(id_txt,id_div){
+function ver(id_txt,id_div){ 
 
  
 document.getElementById(id_div).style.display  ="inherit";
@@ -152,9 +155,11 @@ document.getElementById(id_div).style.display  ="inherit";
 }
 
  
-function enviar_comentario(id_text, usuario,id_post) {
-  		
- var desc=document.getElementById(id_text).value;
+
+ 
+
+		function enviar_comentario(id_text, usuario,id_post) {
+var desc=document.getElementById(id_text).value;
 
       $.ajax({
           type:'POST',
@@ -174,15 +179,43 @@ function enviar_comentario(id_text, usuario,id_post) {
 
       })
 
-    }
+
+}
+
+
+ 
+ 
    
-  
  
- 
-
- 
- 	
- 
-		 
-
  </script>
+
+
+ <script>	 
+ /*function loadcomment(id) {
+  		
+ 
+
+      $.ajax({
+          type:'POST',
+          url:'php_esencial/cargar_comentarios.php',
+          data:('id_poste='+ id),
+
+          success:function(respuestasxs){
+           
+
+             alert(respuestasxs);
+           
+       
+                      
+            
+      
+          }
+
+      })
+
+    }
+var vercomentarios=loadcomment(<?php echo $id_post; ?>);
+  document.getElementById("comentarios").innerHTML = vercomentarios; 
+
+ */
+ 	</script>

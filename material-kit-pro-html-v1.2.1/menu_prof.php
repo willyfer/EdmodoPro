@@ -1,4 +1,4 @@
-
+	
 <?php session_start();
 		$_SESSION['usuario']="willy";
 		 $_SESSION['id']=2;
@@ -93,29 +93,19 @@ function loadnuevatareas(c,g,s) {
           success:function(respuestazz){
          
 
-           try {
-             document.getElementById("enviar_file").submit();
-             location.reload();
-           } catch(e) {
-            location.reload();
-           	// statements
-           	console.log(e);
-           }
+                       
+        		 
             
-              
+             
          
       
           }
 
       })
+  document.getElementById("enviar_file").submit();  
+reload();
     }
 
-    function revisar_tarea(){
-
-    		id
-
-
-    }
    
   
  
@@ -123,35 +113,66 @@ function loadnuevatareas(c,g,s) {
      
  <?php require 'partes/scripts.php'; ?>
 
-<script  type="text/javascript">
-
-       	document.ready(function{
-
-$('.datetimepicker').datetimepicker({
-    icons: {
-        time: "fa fa-clock-o",
-        date: "fa fa-calendar",
-        up: "fa fa-chevron-up",
-        down: "fa fa-chevron-down",
-        previous: 'fa fa-chevron-left',
-        next: 'fa fa-chevron-right',
-        today: 'fa fa-screenshot',
-        clear: 'fa fa-trash',
-        close: 'fa fa-remove'
-    }
-});
-
-
-
-       	});
-</script>
-
-<script type="text/javascript">
+  <script type="text/javascript">
             $(function () {
-                $('#datetimepicker1').datetimepicker();
+                $('.datetimepicker').datetimepicker();
             });
-</script>
+        </script>
  
   
+ <script type="text/javascript">
  
+
+
+function listar_alumnos(curso,grado,seccion,tarea) {
+  		
+    $("div#publicaciones").load('modelo/revisar_tarea.php');
+
+      $.ajax({
+          type:'POST',
+          url:'php_esencial/cargar_alumnos.php',
+          data:('id_curso='+ curso+'&id_grado='+ grado+'&id_seccion='+ seccion+'&id_tarea='+tarea),
+
+          success:function(respuestasa){
+           
+
+         
+             
+            
+          
+            document.getElementById("body").innerHTML = respuestasa;
+       
+                      
+            
+      
+          }
+
+      })
+
+    }
+
+
+
+    function calificar(usuarioc,tareac ){
+
+    var notac=  document.getElementsByTagName("notas").value;
+
+   $.ajax({
+          type:'POST',
+          url:'php_esencial/calificar.php',
+          data:('tarea='+ tareac+'&alumno='+ usuarioc+'&nota='+ notac),
+
+          success:function(respuestasc){
+           
+              alert(respuestasc)
+
+      
+          }
+
+      })
+
+    }
+ 
+</script>
+
 	</html>

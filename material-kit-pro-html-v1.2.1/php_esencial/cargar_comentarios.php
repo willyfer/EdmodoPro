@@ -1,13 +1,17 @@
 
 
 <?php 
+ 
 
- try {
-
- require 'conexion_w.php';
 
  
 
+ try {
+ 	 require 'conexion_w.php';
+
+  
+//$id_post2=$_POST['id_poste'];
+ 
  	 	
  	$statement = $conn->prepare('SELECT tb_comment_id from tb_post_comentario where     tb_post_id=:id_s');
 		$statement->execute( array(  ':id_s' => $id_post));
@@ -40,13 +44,12 @@
 					$resultados7=$statement7->fetchAll();
 					foreach ($resultados7 as $key7  ) {
 						 $nombre_usuario=$key7['tb_usuario_nom'] . "  " .  $key7['tb_usuario_ape'];
-					}
-							 
-  ?>
- 
 				
- 	
-		<div class="container" style="display: flex; margin: 5px;" id="comentario" >
+ 
+ 
+ ?>
+				
+ 	 <div class="container" style="display: flex; margin: 5px;" id="comentario" >
 			 <a class="pull-left" href="#pablo">
 	            <div class="img_small">
 	               	<img class="media-object img-circle" src="assets/img/faces/marc.jpg" alt="...">
@@ -73,21 +76,26 @@
 		    
 		        
 		        								 
-		 </div>
- 	 <?php 		
+		 </div> 
+
+<?php 
+		 
+		 	}
 
  				}
 				
 			}
 	
  } catch (	Exception $e) {
+ 	echo "Error: " . $e->getMenssage();
  	
  }
 	
+   
+
  
 
  ?>
-
 
 
  

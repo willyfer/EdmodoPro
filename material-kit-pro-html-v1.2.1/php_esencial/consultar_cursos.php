@@ -112,59 +112,12 @@ function loadtareas(c,g,s,n) {
    
   
  
-</script>
-
-      <script  type="text/javascript">
-$('.datetimepicker').datetimepicker({
-    icons: {
-        time: "fa fa-clock-o",
-        date: "fa fa-calendar",
-        up: "fa fa-chevron-up",
-        down: "fa fa-chevron-down",
-        previous: 'fa fa-chevron-left',
-        next: 'fa fa-chevron-right',
-        today: 'fa fa-screenshot',
-        clear: 'fa fa-trash',
-        close: 'fa fa-remove'
-    }
-});
-      </script>
-
- <script src="assets/js/jquery.min.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="assets/js/material.min.js"></script>
-
-	<!--  Plugin for Date Time Picker and Full Calendar Plugin-->
-	<script src="assets/js/moment.min.js"></script>
-<!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-	<script src="assets/js/bootstrap-datetimepicker.js" type="text/javascript"></script>
-	<!--	Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-	<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
-
-	
-
-	<!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
-	<script src="assets/js/bootstrap-selectpicker.js" type="text/javascript"></script>
-
-	<!--	Plugin for Tags, full documentation here: http://xoxco.com/projects/code/tagsinput/  -->
-	<script src="assets/js/bootstrap-tagsinput.js"></script>
-
-	<!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
-	<script src="assets/js/jasny-bootstrap.min.js"></script>
-		<script src="assets/js/cerrar_modales.js"></script>
-		<script src="assets/js/date.js"></script>
-
-	<!-- Plugin For Google Maps -->
-	 
-
-
-
-	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
-	<script src="assets/js/material-kit.js?v=1.2.1" type="text/javascript"></script>
-
-	<!-- Fixed Sidebar Nav - JS For Demo Purpose, Don't Include it in your project -->
-	<script src="assets/assets-for-demo/modernizr.js" type="text/javascript"></script>
-	<script src="assets/assets-for-demo/vertical-nav.js" type="text/javascript"></script>
-   <?php require 'partes/scripts.php'; ?>
-<!-- menu_prof.php?curso=' . $id_curso . '&seccion=' . $id_seccion .'&grado=' . $id_grado .'" id="' . $nombre_curso . '-->
- <script src="assets/js/cargar_iconos_cursos.js"> </script>
+ 
+   </script>
+    <?php require 'partes/scripts.php'; ?>
+    
+     <script type="text/javascript">
+            $(function () {
+                $('.datetimepicker').datetimepicker();
+            });
+        </script>

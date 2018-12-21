@@ -50,7 +50,7 @@ try {
 		 	   <tr>
 					<td ><?php echo $cant2['tb_tarea_nombre']  ?></td> 
 					<td>  
-						<a class="btn btn-warning btn-xs"    id="btn_tarea1" href="#" >
+						<a class="btn btn-warning btn-xs"   onclick="javascript:listar_alumnos(<?php echo $curso_id . ',' . $grado_id . ',' . $seccion_id . ',' . $id_tarea ?>);" id="btn_tarea1" href="#" >
 								<i class="material-icons">
 								info
 								</i>Revisar
@@ -80,6 +80,12 @@ try {
 }
 
  ?>
-
-
+ <?php require '../partes/scripts.php'; ?>
+  <script type="text/javascript">
+            $(function () {
+                $('.datetimepicker').datetimepicker();
+            });
+        </script>
+  
+ 
  

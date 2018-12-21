@@ -222,11 +222,8 @@
  }
  .input_calificar {
      width: 40px;
-     border-color: #2a5d84;
-     border-style: solid;
-     border-width: 1px;
+     border-bottom: purple solid 1px;
      color: black;
-     border-radius: 5px;
      font-size: 12px;
  }
  .borde_azul {

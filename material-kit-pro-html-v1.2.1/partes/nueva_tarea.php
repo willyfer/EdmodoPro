@@ -19,42 +19,39 @@
         
           <h5 class="modal-title" id="myModalLabel"> </h5><br>
          
-          <input class="  "  style="padding: 6px 17px; border: 1px purple solid ;width: 100%;border-width: 0px 0px 3px 0px"  id="titulo"   type="text" placeholder="TITULO DE LA TAREA">
+          <input class="  "  style="color:black;padding: 6px 17px; border: 1px purple solid ;width: 100%;border-width: 0px 0px 1px 0px"  id="titulo"   type="text" placeholder="TITULO DE LA TAREA">
            
             
                   
-                  <textarea  placeholder="Descripcion de la tarea" style="padding: 0px 17px; border-bottom: 1px purple solid ;width: 100%;border-width: 0px 0px 3px 0px;margin-top: 20px;" id="des" class="input-group-sm  " style="" rows="1"></textarea>
+                  <textarea  placeholder="Descripcion de la tarea" style=" color:black;padding: 0px 17px; border-bottom: 1px purple solid ;width: 100%;border-width: 0px 0px 1px 0px;margin-top: 20px;" id="des" class="input-group-sm  " style="" rows="1"></textarea>
              
-                <div class='input-group date' id='datetimepicker1'>
-                   <h6>Seleccionar Fecha de inicio  </h6>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
+                
              <!-- input with datetimepicker -->
-             <div class="form-group">
-                <h6>Seleccionar Fecha de inicio  </h6>
+               <h6>Seleccionar Fecha de inicio  </h6>
+             <div class="form-group " style="display: flex;">
+              
 
 
                 <input type="text" id="fech_ini" class="form-control datetimepicker" value="10/05/2018 "/>
-                  <span style="color: black" class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
+                  <i class="material-icons">
+                      calendar_today
+                    </i>
               </div> 
                    <h6>Seleccionar Fecha límite</h6>
-            <div class="form-group">
+            <div class="form-group date" style="display: flex;z-index: 1800 !important">
              <input type="text" id="fec_fin" class="form-control datetimepicker "value="10/05/2018"    />
 
-               <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
+               <span class="material-icons">
+                       
+                      calendar_today
+                    
                     </span>
           </div>
  
     
             <div class="  text-center">
                 
-                <button class="btn btn-success  btn-sm btn-round btn-block "  onclick='javascript:loadnuevatareas(<?php  echo $curso_id . ',' . $grado_id . ',' . $seccion_id; ?>);' type="button">Crear Tarea</button>
+                <button class="btn btn-success  btn-sm btn-round btn-block "  onclick='javascript: loadnuevatareas(<?php  echo $curso_id . ',' . $grado_id . ',' . $seccion_id; ?>);' type="button">Crear Tarea</button>
             
             </div>
        </form>
@@ -104,26 +101,49 @@
          
      
 <?php require '../partes/scripts.php'; ?>
-<script type="text/javascript">
+ 
+   <script type="text/javascript">
             $(function () {
-                $('#datetimepicker1').datetimepicker();
+                $('.datetimepicker').datetimepicker();
             });
         </script>
-
-
-       <script  type="text/javascript">
-$('.datetimepicker').datetimepicker({
-    icons: {
-        time: "fa fa-clock-o",
-        date: "fa fa-calendar",
-        up: "fa fa-chevron-up",
-        down: "fa fa-chevron-down",
-        previous: 'fa fa-chevron-left',
-        next: 'fa fa-chevron-right',
-        today: 'fa fa-screenshot',
-        clear: 'fa fa-trash',
-        close: 'fa fa-remove'
-    }
-});
-      </script>
   
+ <script type="text/javascript">
+function loadnuevatareas(c,g,s) {
+ 
+    var id_d= document.getElementById("des").value;
+    var id_f_i=document.getElementById("fech_ini").value;
+      var id_f = document.getElementById("fec_fin").value;
+       var id_doc = document.getElementsByName("archivo").value;
+        var id_t = document.getElementById("titulo").value;
+
+  
+      $.ajax({
+          type:'POST',
+          url:'php_esencial/registrar_tarea.php',
+          data:('titulo='+ id_t +'&des='+ id_d + '&fec_fin=' +id_f  +"&fec_ini=" + id_f_i+ "&C="+ c +"&S=" + s+ "&G=" +g),
+
+          success:function(respuestazz){
+         
+
+           try {
+             document.getElementById("enviar_file").submit();
+             
+           } catch(e) {
+            
+            
+            console.log(e);
+           }
+            
+              location.reload();
+         
+      
+          }
+
+      })
+    }
+
+  
+  
+ 
+</script>

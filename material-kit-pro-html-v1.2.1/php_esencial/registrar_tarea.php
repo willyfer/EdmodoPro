@@ -10,20 +10,24 @@ try {
   }
  
       $nombre_tareaw=$_POST['titulo'];
+       $arc=$_POST['archivo'];
      
 $desc_tarea=$_POST['des'];
  
 $fech_final=substr($_POST['fec_fin'],0,10);
 $fech_inicial=substr($_POST['fec_ini'],0,10);
-echo $fech_inicial;
+ 
 $tipo="n";
 $nulo=null;
 $CC=$_POST['C'];
 $GG=$_POST['G'];
 $SS=$_POST['S'];
- echo $fech_inicial;
-
  
+
+ //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ //
+ //
+
 
       //var_dump($_FILES["file"]);
 
@@ -42,9 +46,9 @@ $last_id = $conn->lastInsertId();
     // use exec() because no results are returned
     $conn->exec($sql2);
 
-
  
-   }
+header('Location: ../menu_prof.php');
+      
  
 catch(Exception $e) {
      echo     $e->getMessage();
@@ -53,4 +57,5 @@ catch(Exception $e) {
  }
  
  ?>
+ 
  
